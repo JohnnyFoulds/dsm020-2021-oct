@@ -709,3 +709,63 @@
 2022-02-18 13:20:16,478:INFO:num_topics set to: 300
 2022-02-18 13:20:16,480:INFO:LDA multi_core enabled
 2022-02-18 13:20:16,481:INFO:LdaMulticore imported successfully
+2022-02-18 13:54:46,868:INFO:LdaMulticore trained successfully
+2022-02-18 13:54:46,878:INFO:LdaModel(num_terms=21414, num_topics=300, decay=0.5, chunksize=100)
+2022-02-18 13:54:46,880:INFO:create_model() succesfully completed......................................
+2022-02-18 13:54:46,882:INFO:SubProcess create_model() end ==================================
+2022-02-18 13:54:46,882:INFO:SubProcess assign_model() called ==================================
+2022-02-18 13:54:46,887:INFO:Initializing assign_model()
+2022-02-18 13:54:46,888:INFO:assign_model(model=LdaModel(num_terms=21414, num_topics=300, decay=0.5, chunksize=100), verbose=False)
+2022-02-18 13:54:46,890:INFO:Determining model type
+2022-02-18 13:54:46,892:INFO:model type: lda
+2022-02-18 13:54:46,893:INFO:Checking exceptions
+2022-02-18 13:54:46,894:INFO:Preloading libraries
+2022-02-18 13:54:46,896:INFO:Preparing display monitor
+2022-02-18 13:58:52,300:INFO:(35072, 319)
+2022-02-18 13:58:52,303:INFO:assign_model() succesfully completed......................................
+2022-02-18 13:58:53,977:INFO:SubProcess assign_model() end ==================================
+2022-02-18 13:58:53,978:INFO:Fitting Model with num_topics = 400
+2022-02-18 13:58:53,985:INFO:SubProcess create_model() called ==================================
+2022-02-18 13:58:53,987:INFO:Initializing create_model()
+2022-02-18 13:58:53,988:INFO:create_model(model=lda, multi_core=True, num_topics=400, verbose=False, system=True)
+2022-02-18 13:58:53,988:INFO:Checking exceptions
+2022-02-18 13:58:53,989:INFO:Preloading libraries
+2022-02-18 13:58:53,990:INFO:Preparing display monitor
+2022-02-18 13:58:53,996:INFO:Defining topic model
+2022-02-18 13:58:53,997:INFO:Model: Latent Dirichlet Allocation
+2022-02-18 13:58:53,998:INFO:Defining num_topics parameter
+2022-02-18 13:58:53,998:INFO:num_topics set to: 400
+2022-02-18 13:58:54,000:INFO:LDA multi_core enabled
+2022-02-18 13:58:54,000:INFO:LdaMulticore imported successfully
+2022-02-18 14:53:23,255:INFO:LdaMulticore trained successfully
+2022-02-18 14:53:23,273:INFO:LdaModel(num_terms=21414, num_topics=400, decay=0.5, chunksize=100)
+2022-02-18 14:53:23,275:INFO:create_model() succesfully completed......................................
+2022-02-18 14:53:23,277:INFO:SubProcess create_model() end ==================================
+2022-02-18 14:53:23,278:INFO:SubProcess assign_model() called ==================================
+2022-02-18 14:53:23,289:INFO:Initializing assign_model()
+2022-02-18 14:53:23,291:INFO:assign_model(model=LdaModel(num_terms=21414, num_topics=400, decay=0.5, chunksize=100), verbose=False)
+2022-02-18 14:53:23,292:INFO:Determining model type
+2022-02-18 14:53:23,294:INFO:model type: lda
+2022-02-18 14:53:23,295:INFO:Checking exceptions
+2022-02-18 14:53:23,296:INFO:Preloading libraries
+2022-02-18 14:53:23,297:INFO:Preparing display monitor
+2022-02-18 15:00:04,602:INFO:(35072, 419)
+2022-02-18 15:00:04,605:INFO:assign_model() succesfully completed......................................
+2022-02-18 15:00:05,844:INFO:SubProcess assign_model() end ==================================
+2022-02-18 15:00:05,845:INFO:Problem : Unsupervised
+2022-02-18 15:00:05,851:INFO:CoherenceModel imported successfully
+2022-02-18 15:00:05,851:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=21414, num_topics=2, decay=0.5, chunksize=100)
+2022-02-18 15:00:07,930:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=21414, num_topics=4, decay=0.5, chunksize=100)
+2022-02-18 15:00:11,032:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=21414, num_topics=8, decay=0.5, chunksize=100)
+2022-02-18 15:00:16,133:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=21414, num_topics=16, decay=0.5, chunksize=100)
+2022-02-18 15:00:26,070:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=21414, num_topics=32, decay=0.5, chunksize=100)
+2022-02-18 15:00:50,059:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=21414, num_topics=64, decay=0.5, chunksize=100)
+2022-02-18 15:01:38,022:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=21414, num_topics=100, decay=0.5, chunksize=100)
+2022-02-18 15:02:48,276:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=21414, num_topics=200, decay=0.5, chunksize=100)
+2022-02-18 15:04:39,160:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=21414, num_topics=300, decay=0.5, chunksize=100)
+2022-02-18 15:06:33,072:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=21414, num_topics=400, decay=0.5, chunksize=100)
+2022-02-18 15:08:42,151:INFO:Creating metrics dataframe
+2022-02-18 15:08:42,165:INFO:Rendering Visual
+2022-02-18 15:08:42,677:INFO:Visual Rendered Successfully
+2022-02-18 15:08:42,689:INFO:LdaModel(num_terms=21414, num_topics=16, decay=0.5, chunksize=100)
+2022-02-18 15:08:42,693:INFO:tune_model() succesfully completed......................................
