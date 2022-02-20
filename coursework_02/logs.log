@@ -1,458 +1,1384 @@
-2022-02-20 11:57:51,525:INFO:PyCaret NLP Module
-2022-02-20 11:57:51,525:INFO:version 2.3.5
-2022-02-20 11:57:51,526:INFO:Initializing setup()
-2022-02-20 11:57:51,527:INFO:USI: 8088
-2022-02-20 11:57:51,528:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2000, log_experiment=False,
+2022-02-20 17:08:17,722:INFO:PyCaret NLP Module
+2022-02-20 17:08:17,723:INFO:version 2.3.5
+2022-02-20 17:08:17,724:INFO:Initializing setup()
+2022-02-20 17:08:17,724:INFO:USI: b321
+2022-02-20 17:08:17,725:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2000, log_experiment=False,
                     experiment_name=None, log_plots=False, log_data=False, verbose=False)
-2022-02-20 11:57:51,529:INFO:Checking environment
-2022-02-20 11:57:51,530:INFO:python_version: 3.8.12
-2022-02-20 11:57:51,530:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
-2022-02-20 11:57:51,531:INFO:machine: x86_64
-2022-02-20 11:57:51,532:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
-2022-02-20 11:57:51,533:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
-2022-02-20 11:57:51,534:INFO:Checking libraries
-2022-02-20 11:57:51,534:INFO:pd==1.3.4
-2022-02-20 11:57:51,535:INFO:numpy==1.19.5
-2022-02-20 11:57:51,536:INFO:gensim==3.8.3
-2022-02-20 11:57:51,536:INFO:spacy==2.3.7
-2022-02-20 11:57:51,537:INFO:nltk==3.6.5
-2022-02-20 11:57:51,538:INFO:textblob==0.17.1
-2022-02-20 11:57:51,538:INFO:pyLDAvis==3.2.2
-2022-02-20 11:57:51,539:INFO:wordcloud==1.8.1
-2022-02-20 11:57:51,540:INFO:mlflow==1.23.1
-2022-02-20 11:57:51,540:INFO:Checking Exceptions
-2022-02-20 11:57:52,209:INFO:Preloading libraries
-2022-02-20 11:57:52,210:INFO:Preparing display monitor
-2022-02-20 11:57:52,219:INFO:Importing libraries
-2022-02-20 11:57:52,220:INFO:Declaring global variables
-2022-02-20 11:57:52,221:INFO:Input provided : dataframe
-2022-02-20 11:57:52,222:INFO:session_id set to : 2000
-2022-02-20 11:57:52,222:INFO:Copying training dataset
-2022-02-20 11:57:52,224:INFO:Importing stopwords from nltk
-2022-02-20 11:57:52,226:INFO:No custom stopwords defined
-2022-02-20 11:57:52,227:INFO:Removing numeric characters from the text
-2022-02-20 11:57:52,231:INFO:Removing special characters from the text
-2022-02-20 11:57:52,246:INFO:Tokenizing Words
-2022-02-20 11:57:52,270:INFO:Removing stopwords
-2022-02-20 11:57:52,295:INFO:Extracting Bigrams
-2022-02-20 11:57:52,368:INFO:Extracting Trigrams
-2022-02-20 11:57:52,476:INFO:Lemmatizing tokens
-2022-02-20 11:57:53,980:INFO:Removing stopwords after lemmatizing
-2022-02-20 11:57:53,996:INFO:Creating corpus and dictionary
-2022-02-20 11:57:54,005:INFO:Compiling processed text
-2022-02-20 11:57:54,007:INFO:Compiling information grid
-2022-02-20 11:57:54,008:INFO:setup() succesfully completed......................................
-2022-02-20 11:57:54,023:INFO:Initializing create_model()
-2022-02-20 11:57:54,024:INFO:create_model(model=lda, multi_core=True, num_topics=6, verbose=False, system=True)
-2022-02-20 11:57:54,025:INFO:Checking exceptions
-2022-02-20 11:57:54,026:INFO:Preloading libraries
-2022-02-20 11:57:54,026:INFO:Preparing display monitor
-2022-02-20 11:57:54,034:INFO:Defining topic model
-2022-02-20 11:57:54,035:INFO:Model: Latent Dirichlet Allocation
-2022-02-20 11:57:54,036:INFO:Defining num_topics parameter
-2022-02-20 11:57:54,037:INFO:num_topics set to: 6
-2022-02-20 11:57:54,039:INFO:LDA multi_core enabled
-2022-02-20 11:57:54,040:INFO:LdaMulticore imported successfully
-2022-02-20 11:57:55,008:INFO:LdaMulticore trained successfully
-2022-02-20 11:57:55,010:INFO:LdaModel(num_terms=1126, num_topics=6, decay=0.5, chunksize=100)
-2022-02-20 11:57:55,011:INFO:create_model() succesfully completed......................................
-2022-02-20 11:57:55,019:INFO:PyCaret NLP Module
-2022-02-20 11:57:55,019:INFO:version 2.3.5
-2022-02-20 11:57:55,020:INFO:Initializing setup()
-2022-02-20 11:57:55,021:INFO:USI: 593a
-2022-02-20 11:57:55,022:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2000, log_experiment=False,
+2022-02-20 17:08:17,725:INFO:Checking environment
+2022-02-20 17:08:17,726:INFO:python_version: 3.8.12
+2022-02-20 17:08:17,727:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-20 17:08:17,727:INFO:machine: x86_64
+2022-02-20 17:08:17,728:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-20 17:08:17,730:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-20 17:08:17,730:INFO:Checking libraries
+2022-02-20 17:08:17,731:INFO:pd==1.3.4
+2022-02-20 17:08:17,732:INFO:numpy==1.19.5
+2022-02-20 17:08:17,733:INFO:gensim==3.8.3
+2022-02-20 17:08:17,734:INFO:spacy==2.3.7
+2022-02-20 17:08:17,735:INFO:nltk==3.6.5
+2022-02-20 17:08:17,736:INFO:textblob==0.17.1
+2022-02-20 17:08:17,737:INFO:pyLDAvis==3.2.2
+2022-02-20 17:08:17,737:INFO:wordcloud==1.8.1
+2022-02-20 17:08:17,738:INFO:mlflow==1.23.1
+2022-02-20 17:08:17,738:INFO:Checking Exceptions
+2022-02-20 17:08:18,241:INFO:Preloading libraries
+2022-02-20 17:08:18,242:INFO:Preparing display monitor
+2022-02-20 17:08:18,251:INFO:Importing libraries
+2022-02-20 17:08:18,252:INFO:Declaring global variables
+2022-02-20 17:08:18,253:INFO:Input provided : dataframe
+2022-02-20 17:08:18,253:INFO:session_id set to : 2000
+2022-02-20 17:08:18,254:INFO:Copying training dataset
+2022-02-20 17:08:18,256:INFO:Importing stopwords from nltk
+2022-02-20 17:08:18,259:INFO:No custom stopwords defined
+2022-02-20 17:08:18,261:INFO:Removing numeric characters from the text
+2022-02-20 17:08:18,267:INFO:Removing special characters from the text
+2022-02-20 17:08:18,282:INFO:Tokenizing Words
+2022-02-20 17:08:18,306:INFO:Removing stopwords
+2022-02-20 17:08:18,332:INFO:Extracting Bigrams
+2022-02-20 17:08:18,405:INFO:Extracting Trigrams
+2022-02-20 17:08:18,513:INFO:Lemmatizing tokens
+2022-02-20 17:08:19,826:INFO:Removing stopwords after lemmatizing
+2022-02-20 17:08:19,845:INFO:Creating corpus and dictionary
+2022-02-20 17:08:19,857:INFO:Compiling processed text
+2022-02-20 17:08:19,859:INFO:Compiling information grid
+2022-02-20 17:08:19,860:INFO:setup() succesfully completed......................................
+2022-02-20 17:46:11,195:INFO:PyCaret NLP Module
+2022-02-20 17:46:11,196:INFO:version 2.3.5
+2022-02-20 17:46:11,197:INFO:Initializing setup()
+2022-02-20 17:46:11,198:INFO:USI: cc4b
+2022-02-20 17:46:11,199:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2000, log_experiment=False,
                     experiment_name=None, log_plots=False, log_data=False, verbose=False)
-2022-02-20 11:57:55,022:INFO:Checking environment
-2022-02-20 11:57:55,023:INFO:python_version: 3.8.12
-2022-02-20 11:57:55,023:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
-2022-02-20 11:57:55,024:INFO:machine: x86_64
-2022-02-20 11:57:55,025:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
-2022-02-20 11:57:55,026:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
-2022-02-20 11:57:55,026:INFO:Checking libraries
-2022-02-20 11:57:55,027:INFO:pd==1.3.4
-2022-02-20 11:57:55,028:INFO:numpy==1.19.5
-2022-02-20 11:57:55,028:INFO:gensim==3.8.3
-2022-02-20 11:57:55,029:INFO:spacy==2.3.7
-2022-02-20 11:57:55,030:INFO:nltk==3.6.5
-2022-02-20 11:57:55,030:INFO:textblob==0.17.1
-2022-02-20 11:57:55,031:INFO:pyLDAvis==3.2.2
-2022-02-20 11:57:55,031:INFO:wordcloud==1.8.1
-2022-02-20 11:57:55,032:INFO:mlflow==1.23.1
-2022-02-20 11:57:55,032:INFO:Checking Exceptions
-2022-02-20 11:57:55,509:INFO:Preloading libraries
-2022-02-20 11:57:55,510:INFO:Preparing display monitor
-2022-02-20 11:57:55,518:INFO:Importing libraries
-2022-02-20 11:57:55,519:INFO:Declaring global variables
-2022-02-20 11:57:55,520:INFO:Input provided : dataframe
-2022-02-20 11:57:55,520:INFO:session_id set to : 2000
-2022-02-20 11:57:55,521:INFO:Copying training dataset
-2022-02-20 11:57:55,522:INFO:Importing stopwords from nltk
-2022-02-20 11:57:55,524:INFO:No custom stopwords defined
-2022-02-20 11:57:55,525:INFO:Removing numeric characters from the text
-2022-02-20 11:57:55,529:INFO:Removing special characters from the text
-2022-02-20 11:57:55,543:INFO:Tokenizing Words
-2022-02-20 11:57:55,567:INFO:Removing stopwords
-2022-02-20 11:57:55,593:INFO:Extracting Bigrams
-2022-02-20 11:57:55,666:INFO:Extracting Trigrams
-2022-02-20 11:57:55,776:INFO:Lemmatizing tokens
-2022-02-20 11:57:56,786:INFO:Removing stopwords after lemmatizing
-2022-02-20 11:57:56,818:INFO:Creating corpus and dictionary
-2022-02-20 11:57:56,829:INFO:Compiling processed text
-2022-02-20 11:57:56,830:INFO:Compiling information grid
-2022-02-20 11:57:56,831:INFO:setup() succesfully completed......................................
-2022-02-20 11:57:56,847:INFO:Initializing tune_model()
-2022-02-20 11:57:56,848:INFO:tune_model(model=lda, multi_core=True, supervised_target=None, estimator=None, optimize=None, custom_grid=None, auto_fe=True, fold=2, verbose=False)
-2022-02-20 11:57:56,849:INFO:Checking exceptions
-2022-02-20 11:57:56,849:INFO:Preloading libraries
-2022-02-20 11:57:56,850:INFO:Preparing display monitor
-2022-02-20 11:57:56,861:INFO:Importing libraries
-2022-02-20 11:57:56,868:INFO:Objective : Unsupervised
-2022-02-20 11:57:56,869:INFO:Defining model name
-2022-02-20 11:57:56,870:INFO:Topic Model Name: Latent Dirichlet Allocation
-2022-02-20 11:57:56,871:INFO:Defining supervised estimator
-2022-02-20 11:57:56,872:INFO:Estimator: None
-2022-02-20 11:57:56,873:INFO:Defining Optimizer
-2022-02-20 11:57:56,874:INFO:Optimize: None
-2022-02-20 11:57:56,875:INFO:Defining Tuning Grid
-2022-02-20 11:57:56,876:INFO:Pre-defined Grid used
-2022-02-20 11:57:56,878:INFO:Fitting Model with num_topics = 2
-2022-02-20 11:57:56,879:INFO:SubProcess create_model() called ==================================
-2022-02-20 11:57:56,881:INFO:Initializing create_model()
-2022-02-20 11:57:56,882:INFO:create_model(model=lda, multi_core=True, num_topics=2, verbose=False, system=True)
-2022-02-20 11:57:56,883:INFO:Checking exceptions
-2022-02-20 11:57:56,883:INFO:Preloading libraries
-2022-02-20 11:57:56,884:INFO:Preparing display monitor
-2022-02-20 11:57:56,891:INFO:Defining topic model
-2022-02-20 11:57:56,892:INFO:Model: Latent Dirichlet Allocation
-2022-02-20 11:57:56,893:INFO:Defining num_topics parameter
-2022-02-20 11:57:56,893:INFO:num_topics set to: 2
-2022-02-20 11:57:56,896:INFO:LDA multi_core enabled
-2022-02-20 11:57:56,896:INFO:LdaMulticore imported successfully
-2022-02-20 11:57:58,123:INFO:LdaMulticore trained successfully
-2022-02-20 11:57:58,126:INFO:LdaModel(num_terms=1126, num_topics=2, decay=0.5, chunksize=100)
-2022-02-20 11:57:58,127:INFO:create_model() succesfully completed......................................
-2022-02-20 11:57:58,128:INFO:SubProcess create_model() end ==================================
-2022-02-20 11:57:58,129:INFO:SubProcess assign_model() called ==================================
-2022-02-20 11:57:58,131:INFO:Initializing assign_model()
-2022-02-20 11:57:58,132:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=2, decay=0.5, chunksize=100), verbose=False)
-2022-02-20 11:57:58,133:INFO:Determining model type
-2022-02-20 11:57:58,133:INFO:model type: lda
-2022-02-20 11:57:58,134:INFO:Checking exceptions
-2022-02-20 11:57:58,135:INFO:Preloading libraries
-2022-02-20 11:57:58,135:INFO:Preparing display monitor
-2022-02-20 11:57:58,239:INFO:(200, 21)
-2022-02-20 11:57:58,240:INFO:assign_model() succesfully completed......................................
-2022-02-20 11:57:58,241:INFO:SubProcess assign_model() end ==================================
-2022-02-20 11:57:58,242:INFO:Fitting Model with num_topics = 4
-2022-02-20 11:57:58,244:INFO:SubProcess create_model() called ==================================
-2022-02-20 11:57:58,247:INFO:Initializing create_model()
-2022-02-20 11:57:58,250:INFO:create_model(model=lda, multi_core=True, num_topics=4, verbose=False, system=True)
-2022-02-20 11:57:58,252:INFO:Checking exceptions
-2022-02-20 11:57:58,252:INFO:Preloading libraries
-2022-02-20 11:57:58,254:INFO:Preparing display monitor
-2022-02-20 11:57:58,263:INFO:Defining topic model
-2022-02-20 11:57:58,265:INFO:Model: Latent Dirichlet Allocation
-2022-02-20 11:57:58,266:INFO:Defining num_topics parameter
-2022-02-20 11:57:58,267:INFO:num_topics set to: 4
-2022-02-20 11:57:58,269:INFO:LDA multi_core enabled
-2022-02-20 11:57:58,270:INFO:LdaMulticore imported successfully
-2022-02-20 11:57:59,266:INFO:LdaMulticore trained successfully
-2022-02-20 11:57:59,269:INFO:LdaModel(num_terms=1126, num_topics=4, decay=0.5, chunksize=100)
-2022-02-20 11:57:59,270:INFO:create_model() succesfully completed......................................
-2022-02-20 11:57:59,271:INFO:SubProcess create_model() end ==================================
-2022-02-20 11:57:59,272:INFO:SubProcess assign_model() called ==================================
-2022-02-20 11:57:59,274:INFO:Initializing assign_model()
-2022-02-20 11:57:59,275:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=4, decay=0.5, chunksize=100), verbose=False)
-2022-02-20 11:57:59,276:INFO:Determining model type
-2022-02-20 11:57:59,277:INFO:model type: lda
-2022-02-20 11:57:59,277:INFO:Checking exceptions
-2022-02-20 11:57:59,278:INFO:Preloading libraries
-2022-02-20 11:57:59,279:INFO:Preparing display monitor
-2022-02-20 11:57:59,380:INFO:(200, 23)
-2022-02-20 11:57:59,381:INFO:assign_model() succesfully completed......................................
-2022-02-20 11:57:59,382:INFO:SubProcess assign_model() end ==================================
-2022-02-20 11:57:59,383:INFO:Fitting Model with num_topics = 8
-2022-02-20 11:57:59,385:INFO:SubProcess create_model() called ==================================
-2022-02-20 11:57:59,387:INFO:Initializing create_model()
-2022-02-20 11:57:59,388:INFO:create_model(model=lda, multi_core=True, num_topics=8, verbose=False, system=True)
-2022-02-20 11:57:59,389:INFO:Checking exceptions
-2022-02-20 11:57:59,389:INFO:Preloading libraries
-2022-02-20 11:57:59,391:INFO:Preparing display monitor
-2022-02-20 11:57:59,399:INFO:Defining topic model
-2022-02-20 11:57:59,400:INFO:Model: Latent Dirichlet Allocation
-2022-02-20 11:57:59,400:INFO:Defining num_topics parameter
-2022-02-20 11:57:59,401:INFO:num_topics set to: 8
-2022-02-20 11:57:59,402:INFO:LDA multi_core enabled
-2022-02-20 11:57:59,403:INFO:LdaMulticore imported successfully
-2022-02-20 11:58:00,341:INFO:LdaMulticore trained successfully
-2022-02-20 11:58:00,343:INFO:LdaModel(num_terms=1126, num_topics=8, decay=0.5, chunksize=100)
-2022-02-20 11:58:00,344:INFO:create_model() succesfully completed......................................
-2022-02-20 11:58:00,345:INFO:SubProcess create_model() end ==================================
-2022-02-20 11:58:00,346:INFO:SubProcess assign_model() called ==================================
-2022-02-20 11:58:00,348:INFO:Initializing assign_model()
-2022-02-20 11:58:00,349:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=8, decay=0.5, chunksize=100), verbose=False)
-2022-02-20 11:58:00,350:INFO:Determining model type
-2022-02-20 11:58:00,351:INFO:model type: lda
-2022-02-20 11:58:00,351:INFO:Checking exceptions
-2022-02-20 11:58:00,352:INFO:Preloading libraries
-2022-02-20 11:58:00,353:INFO:Preparing display monitor
-2022-02-20 11:58:00,444:INFO:(200, 27)
-2022-02-20 11:58:00,445:INFO:assign_model() succesfully completed......................................
-2022-02-20 11:58:00,446:INFO:SubProcess assign_model() end ==================================
-2022-02-20 11:58:00,447:INFO:Fitting Model with num_topics = 16
-2022-02-20 11:58:00,449:INFO:SubProcess create_model() called ==================================
-2022-02-20 11:58:00,454:INFO:Initializing create_model()
-2022-02-20 11:58:00,456:INFO:create_model(model=lda, multi_core=True, num_topics=16, verbose=False, system=True)
-2022-02-20 11:58:00,457:INFO:Checking exceptions
-2022-02-20 11:58:00,458:INFO:Preloading libraries
-2022-02-20 11:58:00,458:INFO:Preparing display monitor
-2022-02-20 11:58:00,466:INFO:Defining topic model
-2022-02-20 11:58:00,467:INFO:Model: Latent Dirichlet Allocation
-2022-02-20 11:58:00,467:INFO:Defining num_topics parameter
-2022-02-20 11:58:00,468:INFO:num_topics set to: 16
-2022-02-20 11:58:00,470:INFO:LDA multi_core enabled
-2022-02-20 11:58:00,470:INFO:LdaMulticore imported successfully
-2022-02-20 11:58:01,366:INFO:LdaMulticore trained successfully
-2022-02-20 11:58:01,368:INFO:LdaModel(num_terms=1126, num_topics=16, decay=0.5, chunksize=100)
-2022-02-20 11:58:01,369:INFO:create_model() succesfully completed......................................
-2022-02-20 11:58:01,369:INFO:SubProcess create_model() end ==================================
-2022-02-20 11:58:01,370:INFO:SubProcess assign_model() called ==================================
-2022-02-20 11:58:01,372:INFO:Initializing assign_model()
-2022-02-20 11:58:01,373:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=16, decay=0.5, chunksize=100), verbose=False)
-2022-02-20 11:58:01,374:INFO:Determining model type
-2022-02-20 11:58:01,374:INFO:model type: lda
-2022-02-20 11:58:01,375:INFO:Checking exceptions
-2022-02-20 11:58:01,376:INFO:Preloading libraries
-2022-02-20 11:58:01,376:INFO:Preparing display monitor
-2022-02-20 11:58:01,470:INFO:(200, 35)
-2022-02-20 11:58:01,472:INFO:assign_model() succesfully completed......................................
-2022-02-20 11:58:01,473:INFO:SubProcess assign_model() end ==================================
-2022-02-20 11:58:01,473:INFO:Fitting Model with num_topics = 32
-2022-02-20 11:58:01,475:INFO:SubProcess create_model() called ==================================
-2022-02-20 11:58:01,479:INFO:Initializing create_model()
-2022-02-20 11:58:01,481:INFO:create_model(model=lda, multi_core=True, num_topics=32, verbose=False, system=True)
-2022-02-20 11:58:01,483:INFO:Checking exceptions
-2022-02-20 11:58:01,484:INFO:Preloading libraries
-2022-02-20 11:58:01,485:INFO:Preparing display monitor
-2022-02-20 11:58:01,492:INFO:Defining topic model
-2022-02-20 11:58:01,492:INFO:Model: Latent Dirichlet Allocation
-2022-02-20 11:58:01,493:INFO:Defining num_topics parameter
-2022-02-20 11:58:01,494:INFO:num_topics set to: 32
-2022-02-20 11:58:01,496:INFO:LDA multi_core enabled
-2022-02-20 11:58:01,496:INFO:LdaMulticore imported successfully
-2022-02-20 11:58:02,442:INFO:LdaMulticore trained successfully
-2022-02-20 11:58:02,444:INFO:LdaModel(num_terms=1126, num_topics=32, decay=0.5, chunksize=100)
-2022-02-20 11:58:02,445:INFO:create_model() succesfully completed......................................
-2022-02-20 11:58:02,446:INFO:SubProcess create_model() end ==================================
-2022-02-20 11:58:02,446:INFO:SubProcess assign_model() called ==================================
-2022-02-20 11:58:02,449:INFO:Initializing assign_model()
-2022-02-20 11:58:02,450:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=32, decay=0.5, chunksize=100), verbose=False)
-2022-02-20 11:58:02,451:INFO:Determining model type
-2022-02-20 11:58:02,451:INFO:model type: lda
-2022-02-20 11:58:02,452:INFO:Checking exceptions
-2022-02-20 11:58:02,453:INFO:Preloading libraries
-2022-02-20 11:58:02,454:INFO:Preparing display monitor
-2022-02-20 11:58:02,561:INFO:(200, 51)
-2022-02-20 11:58:02,566:INFO:assign_model() succesfully completed......................................
-2022-02-20 11:58:02,572:INFO:SubProcess assign_model() end ==================================
-2022-02-20 11:58:02,577:INFO:Fitting Model with num_topics = 64
-2022-02-20 11:58:02,584:INFO:SubProcess create_model() called ==================================
-2022-02-20 11:58:02,589:INFO:Initializing create_model()
-2022-02-20 11:58:02,590:INFO:create_model(model=lda, multi_core=True, num_topics=64, verbose=False, system=True)
-2022-02-20 11:58:02,592:INFO:Checking exceptions
-2022-02-20 11:58:02,593:INFO:Preloading libraries
-2022-02-20 11:58:02,595:INFO:Preparing display monitor
-2022-02-20 11:58:02,611:INFO:Defining topic model
-2022-02-20 11:58:02,616:INFO:Model: Latent Dirichlet Allocation
-2022-02-20 11:58:02,619:INFO:Defining num_topics parameter
-2022-02-20 11:58:02,621:INFO:num_topics set to: 64
-2022-02-20 11:58:02,625:INFO:LDA multi_core enabled
-2022-02-20 11:58:02,627:INFO:LdaMulticore imported successfully
-2022-02-20 11:58:03,866:INFO:LdaMulticore trained successfully
-2022-02-20 11:58:03,868:INFO:LdaModel(num_terms=1126, num_topics=64, decay=0.5, chunksize=100)
-2022-02-20 11:58:03,869:INFO:create_model() succesfully completed......................................
-2022-02-20 11:58:03,870:INFO:SubProcess create_model() end ==================================
-2022-02-20 11:58:03,871:INFO:SubProcess assign_model() called ==================================
-2022-02-20 11:58:03,874:INFO:Initializing assign_model()
-2022-02-20 11:58:03,875:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=64, decay=0.5, chunksize=100), verbose=False)
-2022-02-20 11:58:03,876:INFO:Determining model type
-2022-02-20 11:58:03,876:INFO:model type: lda
-2022-02-20 11:58:03,877:INFO:Checking exceptions
-2022-02-20 11:58:03,878:INFO:Preloading libraries
-2022-02-20 11:58:03,879:INFO:Preparing display monitor
-2022-02-20 11:58:04,074:INFO:(200, 83)
-2022-02-20 11:58:04,075:INFO:assign_model() succesfully completed......................................
-2022-02-20 11:58:04,078:INFO:SubProcess assign_model() end ==================================
-2022-02-20 11:58:04,080:INFO:Fitting Model with num_topics = 100
-2022-02-20 11:58:04,082:INFO:SubProcess create_model() called ==================================
-2022-02-20 11:58:04,086:INFO:Initializing create_model()
-2022-02-20 11:58:04,087:INFO:create_model(model=lda, multi_core=True, num_topics=100, verbose=False, system=True)
-2022-02-20 11:58:04,088:INFO:Checking exceptions
-2022-02-20 11:58:04,089:INFO:Preloading libraries
-2022-02-20 11:58:04,090:INFO:Preparing display monitor
-2022-02-20 11:58:04,099:INFO:Defining topic model
-2022-02-20 11:58:04,100:INFO:Model: Latent Dirichlet Allocation
-2022-02-20 11:58:04,101:INFO:Defining num_topics parameter
-2022-02-20 11:58:04,102:INFO:num_topics set to: 100
-2022-02-20 11:58:04,104:INFO:LDA multi_core enabled
-2022-02-20 11:58:04,105:INFO:LdaMulticore imported successfully
-2022-02-20 11:58:08,180:INFO:LdaMulticore trained successfully
-2022-02-20 11:58:08,182:INFO:LdaModel(num_terms=1126, num_topics=100, decay=0.5, chunksize=100)
-2022-02-20 11:58:08,183:INFO:create_model() succesfully completed......................................
-2022-02-20 11:58:08,183:INFO:SubProcess create_model() end ==================================
-2022-02-20 11:58:08,184:INFO:SubProcess assign_model() called ==================================
-2022-02-20 11:58:08,192:INFO:Initializing assign_model()
-2022-02-20 11:58:08,193:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=100, decay=0.5, chunksize=100), verbose=False)
-2022-02-20 11:58:08,194:INFO:Determining model type
-2022-02-20 11:58:08,195:INFO:model type: lda
-2022-02-20 11:58:08,196:INFO:Checking exceptions
-2022-02-20 11:58:08,197:INFO:Preloading libraries
-2022-02-20 11:58:08,198:INFO:Preparing display monitor
-2022-02-20 11:58:08,520:INFO:(200, 119)
-2022-02-20 11:58:08,522:INFO:assign_model() succesfully completed......................................
-2022-02-20 11:58:08,525:INFO:SubProcess assign_model() end ==================================
-2022-02-20 11:58:08,527:INFO:Fitting Model with num_topics = 200
-2022-02-20 11:58:08,530:INFO:SubProcess create_model() called ==================================
-2022-02-20 11:58:08,533:INFO:Initializing create_model()
-2022-02-20 11:58:08,534:INFO:create_model(model=lda, multi_core=True, num_topics=200, verbose=False, system=True)
-2022-02-20 11:58:08,535:INFO:Checking exceptions
-2022-02-20 11:58:08,538:INFO:Preloading libraries
-2022-02-20 11:58:08,539:INFO:Preparing display monitor
-2022-02-20 11:58:08,548:INFO:Defining topic model
-2022-02-20 11:58:08,549:INFO:Model: Latent Dirichlet Allocation
-2022-02-20 11:58:08,550:INFO:Defining num_topics parameter
-2022-02-20 11:58:08,550:INFO:num_topics set to: 200
-2022-02-20 11:58:08,552:INFO:LDA multi_core enabled
-2022-02-20 11:58:08,553:INFO:LdaMulticore imported successfully
-2022-02-20 11:58:14,613:INFO:LdaMulticore trained successfully
-2022-02-20 11:58:14,616:INFO:LdaModel(num_terms=1126, num_topics=200, decay=0.5, chunksize=100)
-2022-02-20 11:58:14,617:INFO:create_model() succesfully completed......................................
-2022-02-20 11:58:14,618:INFO:SubProcess create_model() end ==================================
-2022-02-20 11:58:14,619:INFO:SubProcess assign_model() called ==================================
-2022-02-20 11:58:14,621:INFO:Initializing assign_model()
-2022-02-20 11:58:14,622:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=200, decay=0.5, chunksize=100), verbose=False)
-2022-02-20 11:58:14,623:INFO:Determining model type
-2022-02-20 11:58:14,623:INFO:model type: lda
-2022-02-20 11:58:14,624:INFO:Checking exceptions
-2022-02-20 11:58:14,625:INFO:Preloading libraries
-2022-02-20 11:58:14,627:INFO:Preparing display monitor
-2022-02-20 11:58:15,189:INFO:(200, 219)
-2022-02-20 11:58:15,190:INFO:assign_model() succesfully completed......................................
-2022-02-20 11:58:15,193:INFO:SubProcess assign_model() end ==================================
-2022-02-20 11:58:15,194:INFO:Fitting Model with num_topics = 300
-2022-02-20 11:58:15,196:INFO:SubProcess create_model() called ==================================
-2022-02-20 11:58:15,198:INFO:Initializing create_model()
-2022-02-20 11:58:15,199:INFO:create_model(model=lda, multi_core=True, num_topics=300, verbose=False, system=True)
-2022-02-20 11:58:15,199:INFO:Checking exceptions
-2022-02-20 11:58:15,200:INFO:Preloading libraries
-2022-02-20 11:58:15,201:INFO:Preparing display monitor
-2022-02-20 11:58:15,209:INFO:Defining topic model
-2022-02-20 11:58:15,210:INFO:Model: Latent Dirichlet Allocation
-2022-02-20 11:58:15,210:INFO:Defining num_topics parameter
-2022-02-20 11:58:15,211:INFO:num_topics set to: 300
-2022-02-20 11:58:15,213:INFO:LDA multi_core enabled
-2022-02-20 11:58:15,214:INFO:LdaMulticore imported successfully
-2022-02-20 11:58:24,475:INFO:LdaMulticore trained successfully
-2022-02-20 11:58:24,479:INFO:LdaModel(num_terms=1126, num_topics=300, decay=0.5, chunksize=100)
-2022-02-20 11:58:24,480:INFO:create_model() succesfully completed......................................
-2022-02-20 11:58:24,481:INFO:SubProcess create_model() end ==================================
-2022-02-20 11:58:24,482:INFO:SubProcess assign_model() called ==================================
-2022-02-20 11:58:24,486:INFO:Initializing assign_model()
-2022-02-20 11:58:24,487:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=300, decay=0.5, chunksize=100), verbose=False)
-2022-02-20 11:58:24,488:INFO:Determining model type
-2022-02-20 11:58:24,490:INFO:model type: lda
-2022-02-20 11:58:24,491:INFO:Checking exceptions
-2022-02-20 11:58:24,493:INFO:Preloading libraries
-2022-02-20 11:58:24,494:INFO:Preparing display monitor
-2022-02-20 11:58:25,279:INFO:(200, 319)
-2022-02-20 11:58:25,281:INFO:assign_model() succesfully completed......................................
-2022-02-20 11:58:25,286:INFO:SubProcess assign_model() end ==================================
-2022-02-20 11:58:25,287:INFO:Fitting Model with num_topics = 400
-2022-02-20 11:58:25,290:INFO:SubProcess create_model() called ==================================
-2022-02-20 11:58:25,293:INFO:Initializing create_model()
-2022-02-20 11:58:25,294:INFO:create_model(model=lda, multi_core=True, num_topics=400, verbose=False, system=True)
-2022-02-20 11:58:25,295:INFO:Checking exceptions
-2022-02-20 11:58:25,296:INFO:Preloading libraries
-2022-02-20 11:58:25,297:INFO:Preparing display monitor
-2022-02-20 11:58:25,305:INFO:Defining topic model
-2022-02-20 11:58:25,307:INFO:Model: Latent Dirichlet Allocation
-2022-02-20 11:58:25,307:INFO:Defining num_topics parameter
-2022-02-20 11:58:25,308:INFO:num_topics set to: 400
-2022-02-20 11:58:25,311:INFO:LDA multi_core enabled
-2022-02-20 11:58:25,312:INFO:LdaMulticore imported successfully
-2022-02-20 11:58:42,783:INFO:LdaMulticore trained successfully
-2022-02-20 11:58:42,787:INFO:LdaModel(num_terms=1126, num_topics=400, decay=0.5, chunksize=100)
-2022-02-20 11:58:42,788:INFO:create_model() succesfully completed......................................
-2022-02-20 11:58:42,789:INFO:SubProcess create_model() end ==================================
-2022-02-20 11:58:42,790:INFO:SubProcess assign_model() called ==================================
-2022-02-20 11:58:42,795:INFO:Initializing assign_model()
-2022-02-20 11:58:42,796:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=400, decay=0.5, chunksize=100), verbose=False)
-2022-02-20 11:58:42,805:INFO:Determining model type
-2022-02-20 11:58:42,806:INFO:model type: lda
-2022-02-20 11:58:42,807:INFO:Checking exceptions
-2022-02-20 11:58:42,808:INFO:Preloading libraries
-2022-02-20 11:58:42,808:INFO:Preparing display monitor
-2022-02-20 11:58:43,885:INFO:(200, 419)
-2022-02-20 11:58:43,887:INFO:assign_model() succesfully completed......................................
-2022-02-20 11:58:43,893:INFO:SubProcess assign_model() end ==================================
-2022-02-20 11:58:43,894:INFO:Problem : Unsupervised
-2022-02-20 11:58:43,896:INFO:CoherenceModel imported successfully
-2022-02-20 11:58:43,897:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=2, decay=0.5, chunksize=100)
-2022-02-20 11:58:44,496:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=4, decay=0.5, chunksize=100)
-2022-02-20 11:58:45,208:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=8, decay=0.5, chunksize=100)
-2022-02-20 11:58:46,391:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=16, decay=0.5, chunksize=100)
-2022-02-20 11:58:47,769:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=32, decay=0.5, chunksize=100)
-2022-02-20 11:58:49,830:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=64, decay=0.5, chunksize=100)
-2022-02-20 11:58:53,354:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=100, decay=0.5, chunksize=100)
-2022-02-20 11:58:58,077:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=200, decay=0.5, chunksize=100)
-2022-02-20 11:59:04,157:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=300, decay=0.5, chunksize=100)
-2022-02-20 11:59:11,852:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=400, decay=0.5, chunksize=100)
-2022-02-20 11:59:20,273:INFO:Creating metrics dataframe
-2022-02-20 11:59:20,277:INFO:Rendering Visual
-2022-02-20 11:59:20,338:INFO:Visual Rendered Successfully
-2022-02-20 11:59:20,344:INFO:LdaModel(num_terms=1126, num_topics=100, decay=0.5, chunksize=100)
-2022-02-20 11:59:20,345:INFO:tune_model() succesfully completed......................................
-2022-02-20 11:59:20,358:INFO:PyCaret NLP Module
-2022-02-20 11:59:20,359:INFO:version 2.3.5
-2022-02-20 11:59:20,360:INFO:Initializing setup()
-2022-02-20 11:59:20,360:INFO:USI: 6131
-2022-02-20 11:59:20,361:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2000, log_experiment=False,
+2022-02-20 17:46:11,200:INFO:Checking environment
+2022-02-20 17:46:11,201:INFO:python_version: 3.8.12
+2022-02-20 17:46:11,201:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-20 17:46:11,202:INFO:machine: x86_64
+2022-02-20 17:46:11,203:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-20 17:46:11,204:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-20 17:46:11,204:INFO:Checking libraries
+2022-02-20 17:46:11,205:INFO:pd==1.3.4
+2022-02-20 17:46:11,206:INFO:numpy==1.19.5
+2022-02-20 17:46:11,207:INFO:gensim==3.8.3
+2022-02-20 17:46:11,395:INFO:spacy==2.3.7
+2022-02-20 17:46:11,686:INFO:nltk==3.6.5
+2022-02-20 17:46:11,710:INFO:textblob==0.17.1
+2022-02-20 17:46:11,782:INFO:pyLDAvis==3.2.2
+2022-02-20 17:46:11,815:INFO:wordcloud==1.8.1
+2022-02-20 17:46:12,164:INFO:mlflow==1.23.1
+2022-02-20 17:46:12,166:INFO:Checking Exceptions
+2022-02-20 17:46:12,821:INFO:Preloading libraries
+2022-02-20 17:46:12,822:INFO:Preparing display monitor
+2022-02-20 17:46:12,828:INFO:Importing libraries
+2022-02-20 17:46:12,829:INFO:Declaring global variables
+2022-02-20 17:46:12,831:INFO:Input provided : dataframe
+2022-02-20 17:46:12,831:INFO:session_id set to : 2000
+2022-02-20 17:46:12,832:INFO:Copying training dataset
+2022-02-20 17:46:12,834:INFO:Importing stopwords from nltk
+2022-02-20 17:46:13,020:INFO:No custom stopwords defined
+2022-02-20 17:46:13,021:INFO:Removing numeric characters from the text
+2022-02-20 17:46:13,026:INFO:Removing special characters from the text
+2022-02-20 17:46:13,041:INFO:Tokenizing Words
+2022-02-20 17:46:13,066:INFO:Removing stopwords
+2022-02-20 17:46:13,091:INFO:Extracting Bigrams
+2022-02-20 17:46:13,162:INFO:Extracting Trigrams
+2022-02-20 17:46:13,266:INFO:Lemmatizing tokens
+2022-02-20 17:46:14,229:INFO:Removing stopwords after lemmatizing
+2022-02-20 17:46:14,244:INFO:Creating corpus and dictionary
+2022-02-20 17:46:14,254:INFO:Compiling processed text
+2022-02-20 17:46:14,255:INFO:Compiling information grid
+2022-02-20 17:46:14,298:INFO:setup() succesfully completed......................................
+2022-02-20 17:46:14,304:INFO:PyCaret NLP Module
+2022-02-20 17:46:14,305:INFO:version 2.3.5
+2022-02-20 17:46:14,305:INFO:Initializing setup()
+2022-02-20 17:46:14,306:INFO:USI: 4cb1
+2022-02-20 17:46:14,307:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2000, log_experiment=False,
                     experiment_name=None, log_plots=False, log_data=False, verbose=False)
-2022-02-20 11:59:20,362:INFO:Checking environment
-2022-02-20 11:59:20,363:INFO:python_version: 3.8.12
-2022-02-20 11:59:20,363:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
-2022-02-20 11:59:20,364:INFO:machine: x86_64
-2022-02-20 11:59:20,364:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
-2022-02-20 11:59:20,365:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
-2022-02-20 11:59:20,366:INFO:Checking libraries
-2022-02-20 11:59:20,366:INFO:pd==1.3.4
-2022-02-20 11:59:20,367:INFO:numpy==1.19.5
-2022-02-20 11:59:20,368:INFO:gensim==3.8.3
-2022-02-20 11:59:20,368:INFO:spacy==2.3.7
-2022-02-20 11:59:20,369:INFO:nltk==3.6.5
-2022-02-20 11:59:20,370:INFO:textblob==0.17.1
-2022-02-20 11:59:20,371:INFO:pyLDAvis==3.2.2
-2022-02-20 11:59:20,371:INFO:wordcloud==1.8.1
-2022-02-20 11:59:20,372:INFO:mlflow==1.23.1
-2022-02-20 11:59:20,373:INFO:Checking Exceptions
-2022-02-20 11:59:20,883:INFO:Preloading libraries
-2022-02-20 11:59:20,885:INFO:Preparing display monitor
-2022-02-20 11:59:20,892:INFO:Importing libraries
-2022-02-20 11:59:20,893:INFO:Declaring global variables
-2022-02-20 11:59:20,894:INFO:Input provided : dataframe
-2022-02-20 11:59:20,895:INFO:session_id set to : 2000
-2022-02-20 11:59:20,896:INFO:Copying training dataset
-2022-02-20 11:59:20,898:INFO:Importing stopwords from nltk
-2022-02-20 11:59:20,899:INFO:No custom stopwords defined
-2022-02-20 11:59:20,900:INFO:Removing numeric characters from the text
-2022-02-20 11:59:20,903:INFO:Removing special characters from the text
-2022-02-20 11:59:20,918:INFO:Tokenizing Words
-2022-02-20 11:59:20,943:INFO:Removing stopwords
-2022-02-20 11:59:20,968:INFO:Extracting Bigrams
-2022-02-20 11:59:21,044:INFO:Extracting Trigrams
-2022-02-20 11:59:21,150:INFO:Lemmatizing tokens
-2022-02-20 11:59:22,480:INFO:Removing stopwords after lemmatizing
-2022-02-20 11:59:22,501:INFO:Creating corpus and dictionary
-2022-02-20 11:59:22,513:INFO:Compiling processed text
-2022-02-20 11:59:22,514:INFO:Compiling information grid
-2022-02-20 11:59:22,516:INFO:setup() succesfully completed......................................
+2022-02-20 17:46:14,308:INFO:Checking environment
+2022-02-20 17:46:14,309:INFO:python_version: 3.8.12
+2022-02-20 17:46:14,310:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-20 17:46:14,310:INFO:machine: x86_64
+2022-02-20 17:46:14,311:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-20 17:46:14,312:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-20 17:46:14,313:INFO:Checking libraries
+2022-02-20 17:46:14,314:INFO:pd==1.3.4
+2022-02-20 17:46:14,314:INFO:numpy==1.19.5
+2022-02-20 17:46:14,315:INFO:gensim==3.8.3
+2022-02-20 17:46:14,316:INFO:spacy==2.3.7
+2022-02-20 17:46:14,316:INFO:nltk==3.6.5
+2022-02-20 17:46:14,317:INFO:textblob==0.17.1
+2022-02-20 17:46:14,317:INFO:pyLDAvis==3.2.2
+2022-02-20 17:46:14,318:INFO:wordcloud==1.8.1
+2022-02-20 17:46:14,319:INFO:mlflow==1.23.1
+2022-02-20 17:46:14,319:INFO:Checking Exceptions
+2022-02-20 17:46:14,916:INFO:Preloading libraries
+2022-02-20 17:46:14,917:INFO:Preparing display monitor
+2022-02-20 17:46:14,924:INFO:Importing libraries
+2022-02-20 17:46:14,925:INFO:Declaring global variables
+2022-02-20 17:46:14,925:INFO:Input provided : dataframe
+2022-02-20 17:46:14,926:INFO:session_id set to : 2000
+2022-02-20 17:46:14,927:INFO:Copying training dataset
+2022-02-20 17:46:14,929:INFO:Importing stopwords from nltk
+2022-02-20 17:46:14,931:INFO:No custom stopwords defined
+2022-02-20 17:46:14,932:INFO:Removing numeric characters from the text
+2022-02-20 17:46:14,936:INFO:Removing special characters from the text
+2022-02-20 17:46:14,951:INFO:Tokenizing Words
+2022-02-20 17:46:14,976:INFO:Removing stopwords
+2022-02-20 17:46:15,002:INFO:Extracting Bigrams
+2022-02-20 17:46:15,076:INFO:Extracting Trigrams
+2022-02-20 17:46:15,188:INFO:Lemmatizing tokens
+2022-02-20 17:46:16,281:INFO:Removing stopwords after lemmatizing
+2022-02-20 17:46:16,299:INFO:Creating corpus and dictionary
+2022-02-20 17:46:16,310:INFO:Compiling processed text
+2022-02-20 17:46:16,311:INFO:Compiling information grid
+2022-02-20 17:46:16,313:INFO:setup() succesfully completed......................................
+2022-02-20 17:46:16,338:INFO:PyCaret NLP Module
+2022-02-20 17:46:16,339:INFO:version 2.3.5
+2022-02-20 17:46:16,340:INFO:Initializing setup()
+2022-02-20 17:46:16,340:INFO:USI: 6176
+2022-02-20 17:46:16,341:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2000, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=False)
+2022-02-20 17:46:16,343:INFO:Checking environment
+2022-02-20 17:46:16,344:INFO:python_version: 3.8.12
+2022-02-20 17:46:16,345:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-20 17:46:16,346:INFO:machine: x86_64
+2022-02-20 17:46:16,347:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-20 17:46:16,348:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-20 17:46:16,348:INFO:Checking libraries
+2022-02-20 17:46:16,349:INFO:pd==1.3.4
+2022-02-20 17:46:16,350:INFO:numpy==1.19.5
+2022-02-20 17:46:16,350:INFO:gensim==3.8.3
+2022-02-20 17:46:16,351:INFO:spacy==2.3.7
+2022-02-20 17:46:16,352:INFO:nltk==3.6.5
+2022-02-20 17:46:16,352:INFO:textblob==0.17.1
+2022-02-20 17:46:16,353:INFO:pyLDAvis==3.2.2
+2022-02-20 17:46:16,353:INFO:wordcloud==1.8.1
+2022-02-20 17:46:16,354:INFO:mlflow==1.23.1
+2022-02-20 17:46:16,354:INFO:Checking Exceptions
+2022-02-20 17:46:16,928:INFO:Preloading libraries
+2022-02-20 17:46:16,929:INFO:Preparing display monitor
+2022-02-20 17:46:16,940:INFO:Importing libraries
+2022-02-20 17:46:16,941:INFO:Declaring global variables
+2022-02-20 17:46:16,942:INFO:Input provided : dataframe
+2022-02-20 17:46:16,943:INFO:session_id set to : 2000
+2022-02-20 17:46:16,944:INFO:Copying training dataset
+2022-02-20 17:46:16,946:INFO:Importing stopwords from nltk
+2022-02-20 17:46:16,949:INFO:No custom stopwords defined
+2022-02-20 17:46:16,951:INFO:Removing numeric characters from the text
+2022-02-20 17:46:16,955:INFO:Removing special characters from the text
+2022-02-20 17:46:16,971:INFO:Tokenizing Words
+2022-02-20 17:46:17,003:INFO:Removing stopwords
+2022-02-20 17:46:17,032:INFO:Extracting Bigrams
+2022-02-20 17:46:17,112:INFO:Extracting Trigrams
+2022-02-20 17:46:17,225:INFO:Lemmatizing tokens
+2022-02-20 17:46:18,326:INFO:Removing stopwords after lemmatizing
+2022-02-20 17:46:18,346:INFO:Creating corpus and dictionary
+2022-02-20 17:46:18,355:INFO:Compiling processed text
+2022-02-20 17:46:18,356:INFO:Compiling information grid
+2022-02-20 17:46:18,357:INFO:setup() succesfully completed......................................
+2022-02-20 17:47:08,199:INFO:PyCaret NLP Module
+2022-02-20 17:47:08,200:INFO:version 2.3.5
+2022-02-20 17:47:08,202:INFO:Initializing setup()
+2022-02-20 17:47:08,203:INFO:USI: 5f56
+2022-02-20 17:47:08,204:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2000, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=False)
+2022-02-20 17:47:08,205:INFO:Checking environment
+2022-02-20 17:47:08,206:INFO:python_version: 3.8.12
+2022-02-20 17:47:08,207:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-20 17:47:08,208:INFO:machine: x86_64
+2022-02-20 17:47:08,209:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-20 17:47:08,210:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-20 17:47:08,211:INFO:Checking libraries
+2022-02-20 17:47:08,212:INFO:pd==1.3.4
+2022-02-20 17:47:08,213:INFO:numpy==1.19.5
+2022-02-20 17:47:08,214:INFO:gensim==3.8.3
+2022-02-20 17:47:08,215:INFO:spacy==2.3.7
+2022-02-20 17:47:08,215:INFO:nltk==3.6.5
+2022-02-20 17:47:08,216:INFO:textblob==0.17.1
+2022-02-20 17:47:08,218:INFO:pyLDAvis==3.2.2
+2022-02-20 17:47:08,219:INFO:wordcloud==1.8.1
+2022-02-20 17:47:08,219:INFO:mlflow==1.23.1
+2022-02-20 17:47:08,220:INFO:Checking Exceptions
+2022-02-20 17:47:09,034:INFO:Preloading libraries
+2022-02-20 17:47:09,038:INFO:Preparing display monitor
+2022-02-20 17:47:09,054:INFO:Importing libraries
+2022-02-20 17:47:09,056:INFO:Declaring global variables
+2022-02-20 17:47:09,058:INFO:Input provided : dataframe
+2022-02-20 17:47:09,059:INFO:session_id set to : 2000
+2022-02-20 17:47:09,060:INFO:Copying training dataset
+2022-02-20 17:47:09,062:INFO:Importing stopwords from nltk
+2022-02-20 17:47:09,065:INFO:No custom stopwords defined
+2022-02-20 17:47:09,068:INFO:Removing numeric characters from the text
+2022-02-20 17:47:09,081:INFO:Removing special characters from the text
+2022-02-20 17:47:09,119:INFO:Tokenizing Words
+2022-02-20 17:47:09,188:INFO:Removing stopwords
+2022-02-20 17:47:09,228:INFO:Extracting Bigrams
+2022-02-20 17:47:09,347:INFO:Extracting Trigrams
+2022-02-20 17:47:09,496:INFO:Lemmatizing tokens
+2022-02-20 17:47:10,584:INFO:Removing stopwords after lemmatizing
+2022-02-20 17:47:10,611:INFO:Creating corpus and dictionary
+2022-02-20 17:47:10,623:INFO:Compiling processed text
+2022-02-20 17:47:10,624:INFO:Compiling information grid
+2022-02-20 17:47:10,626:INFO:setup() succesfully completed......................................
+2022-02-20 17:47:10,640:INFO:Initializing create_model()
+2022-02-20 17:47:10,641:INFO:create_model(model=lda, multi_core=True, num_topics=6, verbose=False, system=True)
+2022-02-20 17:47:10,641:INFO:Checking exceptions
+2022-02-20 17:47:10,642:INFO:Preloading libraries
+2022-02-20 17:47:10,643:INFO:Preparing display monitor
+2022-02-20 17:47:10,651:INFO:Defining topic model
+2022-02-20 17:47:10,652:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:47:10,652:INFO:Defining num_topics parameter
+2022-02-20 17:47:10,653:INFO:num_topics set to: 6
+2022-02-20 17:47:10,655:INFO:LDA multi_core enabled
+2022-02-20 17:47:10,656:INFO:LdaMulticore imported successfully
+2022-02-20 17:47:11,575:INFO:LdaMulticore trained successfully
+2022-02-20 17:47:11,578:INFO:LdaModel(num_terms=1126, num_topics=6, decay=0.5, chunksize=100)
+2022-02-20 17:47:11,579:INFO:create_model() succesfully completed......................................
+2022-02-20 17:47:11,588:INFO:PyCaret NLP Module
+2022-02-20 17:47:11,589:INFO:version 2.3.5
+2022-02-20 17:47:11,590:INFO:Initializing setup()
+2022-02-20 17:47:11,591:INFO:USI: c2ce
+2022-02-20 17:47:11,591:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2000, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=False)
+2022-02-20 17:47:11,592:INFO:Checking environment
+2022-02-20 17:47:11,593:INFO:python_version: 3.8.12
+2022-02-20 17:47:11,594:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-20 17:47:11,594:INFO:machine: x86_64
+2022-02-20 17:47:11,595:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-20 17:47:11,596:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-20 17:47:11,597:INFO:Checking libraries
+2022-02-20 17:47:11,598:INFO:pd==1.3.4
+2022-02-20 17:47:11,598:INFO:numpy==1.19.5
+2022-02-20 17:47:11,599:INFO:gensim==3.8.3
+2022-02-20 17:47:11,600:INFO:spacy==2.3.7
+2022-02-20 17:47:11,600:INFO:nltk==3.6.5
+2022-02-20 17:47:11,601:INFO:textblob==0.17.1
+2022-02-20 17:47:11,602:INFO:pyLDAvis==3.2.2
+2022-02-20 17:47:11,602:INFO:wordcloud==1.8.1
+2022-02-20 17:47:11,603:INFO:mlflow==1.23.1
+2022-02-20 17:47:11,604:INFO:Checking Exceptions
+2022-02-20 17:47:12,178:INFO:Preloading libraries
+2022-02-20 17:47:12,179:INFO:Preparing display monitor
+2022-02-20 17:47:12,186:INFO:Importing libraries
+2022-02-20 17:47:12,187:INFO:Declaring global variables
+2022-02-20 17:47:12,188:INFO:Input provided : dataframe
+2022-02-20 17:47:12,189:INFO:session_id set to : 2000
+2022-02-20 17:47:12,189:INFO:Copying training dataset
+2022-02-20 17:47:12,191:INFO:Importing stopwords from nltk
+2022-02-20 17:47:12,192:INFO:No custom stopwords defined
+2022-02-20 17:47:12,194:INFO:Removing numeric characters from the text
+2022-02-20 17:47:12,198:INFO:Removing special characters from the text
+2022-02-20 17:47:12,212:INFO:Tokenizing Words
+2022-02-20 17:47:12,236:INFO:Removing stopwords
+2022-02-20 17:47:12,261:INFO:Extracting Bigrams
+2022-02-20 17:47:12,333:INFO:Extracting Trigrams
+2022-02-20 17:47:12,437:INFO:Lemmatizing tokens
+2022-02-20 17:47:13,408:INFO:Removing stopwords after lemmatizing
+2022-02-20 17:47:13,424:INFO:Creating corpus and dictionary
+2022-02-20 17:47:13,433:INFO:Compiling processed text
+2022-02-20 17:47:13,435:INFO:Compiling information grid
+2022-02-20 17:47:13,437:INFO:setup() succesfully completed......................................
+2022-02-20 17:47:13,449:INFO:Initializing tune_model()
+2022-02-20 17:47:13,474:INFO:tune_model(model=lda, multi_core=True, supervised_target=None, estimator=None, optimize=None, custom_grid=None, auto_fe=True, fold=2, verbose=False)
+2022-02-20 17:47:13,476:INFO:Checking exceptions
+2022-02-20 17:47:13,476:INFO:Preloading libraries
+2022-02-20 17:47:13,477:INFO:Preparing display monitor
+2022-02-20 17:47:13,486:INFO:Importing libraries
+2022-02-20 17:47:13,816:INFO:Objective : Unsupervised
+2022-02-20 17:47:13,817:INFO:Defining model name
+2022-02-20 17:47:13,818:INFO:Topic Model Name: Latent Dirichlet Allocation
+2022-02-20 17:47:13,819:INFO:Defining supervised estimator
+2022-02-20 17:47:13,820:INFO:Estimator: None
+2022-02-20 17:47:13,821:INFO:Defining Optimizer
+2022-02-20 17:47:13,822:INFO:Optimize: None
+2022-02-20 17:47:13,823:INFO:Defining Tuning Grid
+2022-02-20 17:47:13,824:INFO:Pre-defined Grid used
+2022-02-20 17:47:13,826:INFO:Fitting Model with num_topics = 2
+2022-02-20 17:47:13,828:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:47:13,830:INFO:Initializing create_model()
+2022-02-20 17:47:13,831:INFO:create_model(model=lda, multi_core=True, num_topics=2, verbose=False, system=True)
+2022-02-20 17:47:13,832:INFO:Checking exceptions
+2022-02-20 17:47:13,833:INFO:Preloading libraries
+2022-02-20 17:47:13,834:INFO:Preparing display monitor
+2022-02-20 17:47:13,841:INFO:Defining topic model
+2022-02-20 17:47:13,842:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:47:13,843:INFO:Defining num_topics parameter
+2022-02-20 17:47:13,843:INFO:num_topics set to: 2
+2022-02-20 17:47:13,845:INFO:LDA multi_core enabled
+2022-02-20 17:47:13,846:INFO:LdaMulticore imported successfully
+2022-02-20 17:47:15,916:INFO:LdaMulticore trained successfully
+2022-02-20 17:47:15,919:INFO:LdaModel(num_terms=1126, num_topics=2, decay=0.5, chunksize=100)
+2022-02-20 17:47:15,920:INFO:create_model() succesfully completed......................................
+2022-02-20 17:47:15,921:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:47:15,921:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:47:15,924:INFO:Initializing assign_model()
+2022-02-20 17:47:15,925:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=2, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:47:15,927:INFO:Determining model type
+2022-02-20 17:47:15,928:INFO:model type: lda
+2022-02-20 17:47:15,929:INFO:Checking exceptions
+2022-02-20 17:47:15,930:INFO:Preloading libraries
+2022-02-20 17:47:15,931:INFO:Preparing display monitor
+2022-02-20 17:47:16,044:INFO:(200, 21)
+2022-02-20 17:47:16,045:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:47:16,046:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:47:16,047:INFO:Fitting Model with num_topics = 4
+2022-02-20 17:47:16,049:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:47:16,054:INFO:Initializing create_model()
+2022-02-20 17:47:16,057:INFO:create_model(model=lda, multi_core=True, num_topics=4, verbose=False, system=True)
+2022-02-20 17:47:16,057:INFO:Checking exceptions
+2022-02-20 17:47:16,058:INFO:Preloading libraries
+2022-02-20 17:47:16,059:INFO:Preparing display monitor
+2022-02-20 17:47:16,066:INFO:Defining topic model
+2022-02-20 17:47:16,066:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:47:16,067:INFO:Defining num_topics parameter
+2022-02-20 17:47:16,068:INFO:num_topics set to: 4
+2022-02-20 17:47:16,069:INFO:LDA multi_core enabled
+2022-02-20 17:47:16,070:INFO:LdaMulticore imported successfully
+2022-02-20 17:47:17,816:INFO:LdaMulticore trained successfully
+2022-02-20 17:47:17,818:INFO:LdaModel(num_terms=1126, num_topics=4, decay=0.5, chunksize=100)
+2022-02-20 17:47:17,819:INFO:create_model() succesfully completed......................................
+2022-02-20 17:47:17,820:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:47:17,821:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:47:17,824:INFO:Initializing assign_model()
+2022-02-20 17:47:17,825:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=4, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:47:17,826:INFO:Determining model type
+2022-02-20 17:47:17,827:INFO:model type: lda
+2022-02-20 17:47:17,828:INFO:Checking exceptions
+2022-02-20 17:47:17,829:INFO:Preloading libraries
+2022-02-20 17:47:17,830:INFO:Preparing display monitor
+2022-02-20 17:47:18,064:INFO:(200, 23)
+2022-02-20 17:47:18,065:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:47:18,067:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:47:18,068:INFO:Fitting Model with num_topics = 8
+2022-02-20 17:47:18,070:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:47:18,073:INFO:Initializing create_model()
+2022-02-20 17:47:18,073:INFO:create_model(model=lda, multi_core=True, num_topics=8, verbose=False, system=True)
+2022-02-20 17:47:18,074:INFO:Checking exceptions
+2022-02-20 17:47:18,075:INFO:Preloading libraries
+2022-02-20 17:47:18,076:INFO:Preparing display monitor
+2022-02-20 17:47:18,087:INFO:Defining topic model
+2022-02-20 17:47:18,089:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:47:18,090:INFO:Defining num_topics parameter
+2022-02-20 17:47:18,092:INFO:num_topics set to: 8
+2022-02-20 17:47:18,095:INFO:LDA multi_core enabled
+2022-02-20 17:47:18,096:INFO:LdaMulticore imported successfully
+2022-02-20 17:47:18,992:INFO:LdaMulticore trained successfully
+2022-02-20 17:47:18,995:INFO:LdaModel(num_terms=1126, num_topics=8, decay=0.5, chunksize=100)
+2022-02-20 17:47:18,996:INFO:create_model() succesfully completed......................................
+2022-02-20 17:47:18,996:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:47:18,997:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:47:19,000:INFO:Initializing assign_model()
+2022-02-20 17:47:19,000:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=8, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:47:19,001:INFO:Determining model type
+2022-02-20 17:47:19,003:INFO:model type: lda
+2022-02-20 17:47:19,003:INFO:Checking exceptions
+2022-02-20 17:47:19,004:INFO:Preloading libraries
+2022-02-20 17:47:19,005:INFO:Preparing display monitor
+2022-02-20 17:47:19,103:INFO:(200, 27)
+2022-02-20 17:47:19,104:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:47:19,105:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:47:19,107:INFO:Fitting Model with num_topics = 16
+2022-02-20 17:47:19,109:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:47:19,116:INFO:Initializing create_model()
+2022-02-20 17:47:19,118:INFO:create_model(model=lda, multi_core=True, num_topics=16, verbose=False, system=True)
+2022-02-20 17:47:19,119:INFO:Checking exceptions
+2022-02-20 17:47:19,120:INFO:Preloading libraries
+2022-02-20 17:47:19,122:INFO:Preparing display monitor
+2022-02-20 17:47:19,132:INFO:Defining topic model
+2022-02-20 17:47:19,133:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:47:19,134:INFO:Defining num_topics parameter
+2022-02-20 17:47:19,134:INFO:num_topics set to: 16
+2022-02-20 17:47:19,136:INFO:LDA multi_core enabled
+2022-02-20 17:47:19,137:INFO:LdaMulticore imported successfully
+2022-02-20 17:47:19,966:INFO:LdaMulticore trained successfully
+2022-02-20 17:47:19,968:INFO:LdaModel(num_terms=1126, num_topics=16, decay=0.5, chunksize=100)
+2022-02-20 17:47:19,969:INFO:create_model() succesfully completed......................................
+2022-02-20 17:47:19,970:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:47:19,971:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:47:19,973:INFO:Initializing assign_model()
+2022-02-20 17:47:19,974:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=16, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:47:19,975:INFO:Determining model type
+2022-02-20 17:47:19,976:INFO:model type: lda
+2022-02-20 17:47:19,977:INFO:Checking exceptions
+2022-02-20 17:47:19,978:INFO:Preloading libraries
+2022-02-20 17:47:19,978:INFO:Preparing display monitor
+2022-02-20 17:47:20,070:INFO:(200, 35)
+2022-02-20 17:47:20,071:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:47:20,072:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:47:20,073:INFO:Fitting Model with num_topics = 32
+2022-02-20 17:47:20,074:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:47:20,076:INFO:Initializing create_model()
+2022-02-20 17:47:20,077:INFO:create_model(model=lda, multi_core=True, num_topics=32, verbose=False, system=True)
+2022-02-20 17:47:20,078:INFO:Checking exceptions
+2022-02-20 17:47:20,079:INFO:Preloading libraries
+2022-02-20 17:47:20,079:INFO:Preparing display monitor
+2022-02-20 17:47:20,086:INFO:Defining topic model
+2022-02-20 17:47:20,087:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:47:20,088:INFO:Defining num_topics parameter
+2022-02-20 17:47:20,089:INFO:num_topics set to: 32
+2022-02-20 17:47:20,090:INFO:LDA multi_core enabled
+2022-02-20 17:47:20,091:INFO:LdaMulticore imported successfully
+2022-02-20 17:47:20,890:INFO:LdaMulticore trained successfully
+2022-02-20 17:47:20,893:INFO:LdaModel(num_terms=1126, num_topics=32, decay=0.5, chunksize=100)
+2022-02-20 17:47:20,893:INFO:create_model() succesfully completed......................................
+2022-02-20 17:47:20,894:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:47:20,895:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:47:20,898:INFO:Initializing assign_model()
+2022-02-20 17:47:20,899:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=32, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:47:20,899:INFO:Determining model type
+2022-02-20 17:47:20,900:INFO:model type: lda
+2022-02-20 17:47:20,901:INFO:Checking exceptions
+2022-02-20 17:47:20,901:INFO:Preloading libraries
+2022-02-20 17:47:20,902:INFO:Preparing display monitor
+2022-02-20 17:47:21,020:INFO:(200, 51)
+2022-02-20 17:47:21,022:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:47:21,024:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:47:21,025:INFO:Fitting Model with num_topics = 64
+2022-02-20 17:47:21,029:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:47:21,033:INFO:Initializing create_model()
+2022-02-20 17:47:21,034:INFO:create_model(model=lda, multi_core=True, num_topics=64, verbose=False, system=True)
+2022-02-20 17:47:21,035:INFO:Checking exceptions
+2022-02-20 17:47:21,036:INFO:Preloading libraries
+2022-02-20 17:47:21,038:INFO:Preparing display monitor
+2022-02-20 17:47:21,050:INFO:Defining topic model
+2022-02-20 17:47:21,051:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:47:21,052:INFO:Defining num_topics parameter
+2022-02-20 17:47:21,053:INFO:num_topics set to: 64
+2022-02-20 17:47:21,055:INFO:LDA multi_core enabled
+2022-02-20 17:47:21,058:INFO:LdaMulticore imported successfully
+2022-02-20 17:47:22,055:INFO:LdaMulticore trained successfully
+2022-02-20 17:47:22,058:INFO:LdaModel(num_terms=1126, num_topics=64, decay=0.5, chunksize=100)
+2022-02-20 17:47:22,058:INFO:create_model() succesfully completed......................................
+2022-02-20 17:47:22,059:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:47:22,060:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:47:22,062:INFO:Initializing assign_model()
+2022-02-20 17:47:22,063:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=64, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:47:22,063:INFO:Determining model type
+2022-02-20 17:47:22,064:INFO:model type: lda
+2022-02-20 17:47:22,065:INFO:Checking exceptions
+2022-02-20 17:47:22,067:INFO:Preloading libraries
+2022-02-20 17:47:22,068:INFO:Preparing display monitor
+2022-02-20 17:47:22,202:INFO:(200, 83)
+2022-02-20 17:47:22,203:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:47:22,205:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:47:22,205:INFO:Fitting Model with num_topics = 100
+2022-02-20 17:47:22,207:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:47:22,210:INFO:Initializing create_model()
+2022-02-20 17:47:22,211:INFO:create_model(model=lda, multi_core=True, num_topics=100, verbose=False, system=True)
+2022-02-20 17:47:22,212:INFO:Checking exceptions
+2022-02-20 17:47:22,213:INFO:Preloading libraries
+2022-02-20 17:47:22,214:INFO:Preparing display monitor
+2022-02-20 17:47:22,222:INFO:Defining topic model
+2022-02-20 17:47:22,223:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:47:22,225:INFO:Defining num_topics parameter
+2022-02-20 17:47:22,226:INFO:num_topics set to: 100
+2022-02-20 17:47:22,228:INFO:LDA multi_core enabled
+2022-02-20 17:47:22,230:INFO:LdaMulticore imported successfully
+2022-02-20 17:47:26,038:INFO:LdaMulticore trained successfully
+2022-02-20 17:47:26,041:INFO:LdaModel(num_terms=1126, num_topics=100, decay=0.5, chunksize=100)
+2022-02-20 17:47:26,042:INFO:create_model() succesfully completed......................................
+2022-02-20 17:47:26,042:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:47:26,043:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:47:26,045:INFO:Initializing assign_model()
+2022-02-20 17:47:26,046:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=100, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:47:26,047:INFO:Determining model type
+2022-02-20 17:47:26,047:INFO:model type: lda
+2022-02-20 17:47:26,048:INFO:Checking exceptions
+2022-02-20 17:47:26,048:INFO:Preloading libraries
+2022-02-20 17:47:26,049:INFO:Preparing display monitor
+2022-02-20 17:47:26,365:INFO:(200, 119)
+2022-02-20 17:47:26,367:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:47:26,370:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:47:26,372:INFO:Fitting Model with num_topics = 200
+2022-02-20 17:47:26,375:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:47:26,378:INFO:Initializing create_model()
+2022-02-20 17:47:26,378:INFO:create_model(model=lda, multi_core=True, num_topics=200, verbose=False, system=True)
+2022-02-20 17:47:26,379:INFO:Checking exceptions
+2022-02-20 17:47:26,380:INFO:Preloading libraries
+2022-02-20 17:47:26,381:INFO:Preparing display monitor
+2022-02-20 17:47:26,392:INFO:Defining topic model
+2022-02-20 17:47:26,393:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:47:26,394:INFO:Defining num_topics parameter
+2022-02-20 17:47:26,394:INFO:num_topics set to: 200
+2022-02-20 17:47:26,396:INFO:LDA multi_core enabled
+2022-02-20 17:47:26,397:INFO:LdaMulticore imported successfully
+2022-02-20 17:47:32,415:INFO:LdaMulticore trained successfully
+2022-02-20 17:47:32,424:INFO:LdaModel(num_terms=1126, num_topics=200, decay=0.5, chunksize=100)
+2022-02-20 17:47:32,425:INFO:create_model() succesfully completed......................................
+2022-02-20 17:47:32,427:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:47:32,428:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:47:32,431:INFO:Initializing assign_model()
+2022-02-20 17:47:32,432:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=200, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:47:32,433:INFO:Determining model type
+2022-02-20 17:47:32,434:INFO:model type: lda
+2022-02-20 17:47:32,435:INFO:Checking exceptions
+2022-02-20 17:47:32,436:INFO:Preloading libraries
+2022-02-20 17:47:32,437:INFO:Preparing display monitor
+2022-02-20 17:47:33,185:INFO:(200, 219)
+2022-02-20 17:47:33,187:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:47:33,191:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:47:33,194:INFO:Fitting Model with num_topics = 300
+2022-02-20 17:47:33,198:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:47:33,201:INFO:Initializing create_model()
+2022-02-20 17:47:33,203:INFO:create_model(model=lda, multi_core=True, num_topics=300, verbose=False, system=True)
+2022-02-20 17:47:33,204:INFO:Checking exceptions
+2022-02-20 17:47:33,206:INFO:Preloading libraries
+2022-02-20 17:47:33,208:INFO:Preparing display monitor
+2022-02-20 17:47:33,220:INFO:Defining topic model
+2022-02-20 17:47:33,222:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:47:33,223:INFO:Defining num_topics parameter
+2022-02-20 17:47:33,224:INFO:num_topics set to: 300
+2022-02-20 17:47:33,227:INFO:LDA multi_core enabled
+2022-02-20 17:47:33,229:INFO:LdaMulticore imported successfully
+2022-02-20 17:47:41,794:INFO:LdaMulticore trained successfully
+2022-02-20 17:47:41,797:INFO:LdaModel(num_terms=1126, num_topics=300, decay=0.5, chunksize=100)
+2022-02-20 17:47:41,798:INFO:create_model() succesfully completed......................................
+2022-02-20 17:47:41,799:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:47:41,799:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:47:41,802:INFO:Initializing assign_model()
+2022-02-20 17:47:41,803:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=300, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:47:41,804:INFO:Determining model type
+2022-02-20 17:47:41,805:INFO:model type: lda
+2022-02-20 17:47:41,806:INFO:Checking exceptions
+2022-02-20 17:47:41,807:INFO:Preloading libraries
+2022-02-20 17:47:41,808:INFO:Preparing display monitor
+2022-02-20 17:47:42,505:INFO:(200, 319)
+2022-02-20 17:47:42,506:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:47:42,510:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:47:42,511:INFO:Fitting Model with num_topics = 400
+2022-02-20 17:47:42,513:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:47:42,515:INFO:Initializing create_model()
+2022-02-20 17:47:42,516:INFO:create_model(model=lda, multi_core=True, num_topics=400, verbose=False, system=True)
+2022-02-20 17:47:42,517:INFO:Checking exceptions
+2022-02-20 17:47:42,517:INFO:Preloading libraries
+2022-02-20 17:47:42,518:INFO:Preparing display monitor
+2022-02-20 17:47:42,527:INFO:Defining topic model
+2022-02-20 17:47:42,528:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:47:42,529:INFO:Defining num_topics parameter
+2022-02-20 17:47:42,530:INFO:num_topics set to: 400
+2022-02-20 17:47:42,531:INFO:LDA multi_core enabled
+2022-02-20 17:47:42,532:INFO:LdaMulticore imported successfully
+2022-02-20 17:47:54,890:INFO:LdaMulticore trained successfully
+2022-02-20 17:47:54,893:INFO:LdaModel(num_terms=1126, num_topics=400, decay=0.5, chunksize=100)
+2022-02-20 17:47:54,895:INFO:create_model() succesfully completed......................................
+2022-02-20 17:47:54,896:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:47:54,897:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:47:54,902:INFO:Initializing assign_model()
+2022-02-20 17:47:54,903:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=400, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:47:54,904:INFO:Determining model type
+2022-02-20 17:47:54,905:INFO:model type: lda
+2022-02-20 17:47:54,906:INFO:Checking exceptions
+2022-02-20 17:47:54,907:INFO:Preloading libraries
+2022-02-20 17:47:54,908:INFO:Preparing display monitor
+2022-02-20 17:47:56,867:INFO:(200, 419)
+2022-02-20 17:47:56,869:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:47:56,874:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:47:56,875:INFO:Problem : Unsupervised
+2022-02-20 17:47:56,876:INFO:CoherenceModel imported successfully
+2022-02-20 17:47:56,878:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=2, decay=0.5, chunksize=100)
+2022-02-20 17:47:57,351:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=4, decay=0.5, chunksize=100)
+2022-02-20 17:47:57,861:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=8, decay=0.5, chunksize=100)
+2022-02-20 17:47:58,550:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=16, decay=0.5, chunksize=100)
+2022-02-20 17:47:59,701:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=32, decay=0.5, chunksize=100)
+2022-02-20 17:48:01,808:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=64, decay=0.5, chunksize=100)
+2022-02-20 17:48:04,989:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=100, decay=0.5, chunksize=100)
+2022-02-20 17:48:09,549:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=200, decay=0.5, chunksize=100)
+2022-02-20 17:48:15,649:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=300, decay=0.5, chunksize=100)
+2022-02-20 17:48:23,876:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=400, decay=0.5, chunksize=100)
+2022-02-20 17:48:32,413:INFO:Creating metrics dataframe
+2022-02-20 17:48:32,416:INFO:Rendering Visual
+2022-02-20 17:48:33,047:INFO:Visual Rendered Successfully
+2022-02-20 17:48:33,054:INFO:LdaModel(num_terms=1126, num_topics=100, decay=0.5, chunksize=100)
+2022-02-20 17:48:33,055:INFO:tune_model() succesfully completed......................................
+2022-02-20 17:48:33,072:INFO:PyCaret NLP Module
+2022-02-20 17:48:33,074:INFO:version 2.3.5
+2022-02-20 17:48:33,075:INFO:Initializing setup()
+2022-02-20 17:48:33,076:INFO:USI: 4755
+2022-02-20 17:48:33,078:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2000, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=False)
+2022-02-20 17:48:33,079:INFO:Checking environment
+2022-02-20 17:48:33,080:INFO:python_version: 3.8.12
+2022-02-20 17:48:33,082:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-20 17:48:33,083:INFO:machine: x86_64
+2022-02-20 17:48:33,084:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-20 17:48:33,085:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-20 17:48:33,086:INFO:Checking libraries
+2022-02-20 17:48:33,087:INFO:pd==1.3.4
+2022-02-20 17:48:33,088:INFO:numpy==1.19.5
+2022-02-20 17:48:33,089:INFO:gensim==3.8.3
+2022-02-20 17:48:33,090:INFO:spacy==2.3.7
+2022-02-20 17:48:33,091:INFO:nltk==3.6.5
+2022-02-20 17:48:33,092:INFO:textblob==0.17.1
+2022-02-20 17:48:33,093:INFO:pyLDAvis==3.2.2
+2022-02-20 17:48:33,094:INFO:wordcloud==1.8.1
+2022-02-20 17:48:33,095:INFO:mlflow==1.23.1
+2022-02-20 17:48:33,096:INFO:Checking Exceptions
+2022-02-20 17:48:33,753:INFO:Preloading libraries
+2022-02-20 17:48:33,754:INFO:Preparing display monitor
+2022-02-20 17:48:33,762:INFO:Importing libraries
+2022-02-20 17:48:33,764:INFO:Declaring global variables
+2022-02-20 17:48:33,765:INFO:Input provided : dataframe
+2022-02-20 17:48:33,766:INFO:session_id set to : 2000
+2022-02-20 17:48:33,767:INFO:Copying training dataset
+2022-02-20 17:48:33,769:INFO:Importing stopwords from nltk
+2022-02-20 17:48:33,771:INFO:No custom stopwords defined
+2022-02-20 17:48:33,773:INFO:Removing numeric characters from the text
+2022-02-20 17:48:33,781:INFO:Removing special characters from the text
+2022-02-20 17:48:33,804:INFO:Tokenizing Words
+2022-02-20 17:48:33,841:INFO:Removing stopwords
+2022-02-20 17:48:33,872:INFO:Extracting Bigrams
+2022-02-20 17:48:33,955:INFO:Extracting Trigrams
+2022-02-20 17:48:34,073:INFO:Lemmatizing tokens
+2022-02-20 17:48:35,290:INFO:Removing stopwords after lemmatizing
+2022-02-20 17:48:35,327:INFO:Creating corpus and dictionary
+2022-02-20 17:48:35,337:INFO:Compiling processed text
+2022-02-20 17:48:35,339:INFO:Compiling information grid
+2022-02-20 17:48:35,341:INFO:setup() succesfully completed......................................
+2022-02-20 17:51:03,160:INFO:Initializing create_model()
+2022-02-20 17:51:03,162:INFO:create_model(model=lda, multi_core=False, num_topics=None, verbose=True, system=True)
+2022-02-20 17:51:03,163:INFO:Checking exceptions
+2022-02-20 17:51:03,164:INFO:Preloading libraries
+2022-02-20 17:51:03,165:INFO:Preparing display monitor
+2022-02-20 17:51:03,202:INFO:Defining topic model
+2022-02-20 17:51:03,203:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:51:03,204:INFO:Defining num_topics parameter
+2022-02-20 17:51:03,205:INFO:num_topics set to: 4
+2022-02-20 17:51:03,214:INFO:LdaModel imported successfully
+2022-02-20 17:51:03,973:INFO:LdaModel trained successfully
+2022-02-20 17:51:03,978:INFO:LdaModel(num_terms=1126, num_topics=4, decay=0.5, chunksize=100)
+2022-02-20 17:51:03,979:INFO:create_model() succesfully completed......................................
+2022-02-20 17:51:28,035:INFO:Initializing create_model()
+2022-02-20 17:51:28,037:INFO:create_model(model=lda, multi_core=False, num_topics=None, verbose=True, system=True)
+2022-02-20 17:51:28,037:INFO:Checking exceptions
+2022-02-20 17:51:28,038:INFO:Preloading libraries
+2022-02-20 17:51:28,039:INFO:Preparing display monitor
+2022-02-20 17:51:28,053:INFO:Defining topic model
+2022-02-20 17:51:28,054:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:51:28,055:INFO:Defining num_topics parameter
+2022-02-20 17:51:28,055:INFO:num_topics set to: 4
+2022-02-20 17:51:28,062:INFO:LdaModel imported successfully
+2022-02-20 17:51:28,822:INFO:LdaModel trained successfully
+2022-02-20 17:51:28,827:INFO:LdaModel(num_terms=1126, num_topics=4, decay=0.5, chunksize=100)
+2022-02-20 17:51:28,828:INFO:create_model() succesfully completed......................................
+2022-02-20 17:51:40,697:INFO:Initializing create_model()
+2022-02-20 17:51:40,698:INFO:create_model(model=lda, multi_core=False, num_topics=None, verbose=True, system=True)
+2022-02-20 17:51:40,699:INFO:Checking exceptions
+2022-02-20 17:51:40,700:INFO:Preloading libraries
+2022-02-20 17:51:40,701:INFO:Preparing display monitor
+2022-02-20 17:51:40,720:INFO:Defining topic model
+2022-02-20 17:51:40,721:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:51:40,722:INFO:Defining num_topics parameter
+2022-02-20 17:51:40,723:INFO:num_topics set to: 4
+2022-02-20 17:51:40,733:INFO:LdaModel imported successfully
+2022-02-20 17:51:41,743:INFO:LdaModel trained successfully
+2022-02-20 17:51:41,747:INFO:LdaModel(num_terms=1126, num_topics=4, decay=0.5, chunksize=100)
+2022-02-20 17:51:41,748:INFO:create_model() succesfully completed......................................
+2022-02-20 17:51:50,230:INFO:Initializing create_model()
+2022-02-20 17:51:50,231:INFO:create_model(model=lda, multi_core=False, num_topics=None, verbose=True, system=True)
+2022-02-20 17:51:50,232:INFO:Checking exceptions
+2022-02-20 17:51:50,233:INFO:Preloading libraries
+2022-02-20 17:51:50,233:INFO:Preparing display monitor
+2022-02-20 17:51:50,251:INFO:Defining topic model
+2022-02-20 17:51:50,252:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:51:50,253:INFO:Defining num_topics parameter
+2022-02-20 17:51:50,254:INFO:num_topics set to: 4
+2022-02-20 17:51:50,260:INFO:LdaModel imported successfully
+2022-02-20 17:51:51,149:INFO:LdaModel trained successfully
+2022-02-20 17:51:51,153:INFO:LdaModel(num_terms=1126, num_topics=4, decay=0.5, chunksize=100)
+2022-02-20 17:51:51,154:INFO:create_model() succesfully completed......................................
+2022-02-20 17:54:06,184:INFO:PyCaret NLP Module
+2022-02-20 17:54:06,185:INFO:version 2.3.5
+2022-02-20 17:54:06,186:INFO:Initializing setup()
+2022-02-20 17:54:06,188:INFO:USI: 0759
+2022-02-20 17:54:06,189:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2000, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=False)
+2022-02-20 17:54:06,189:INFO:Checking environment
+2022-02-20 17:54:06,190:INFO:python_version: 3.8.12
+2022-02-20 17:54:06,191:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-20 17:54:06,192:INFO:machine: x86_64
+2022-02-20 17:54:06,193:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-20 17:54:06,194:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-20 17:54:06,196:INFO:Checking libraries
+2022-02-20 17:54:06,197:INFO:pd==1.3.4
+2022-02-20 17:54:06,197:INFO:numpy==1.19.5
+2022-02-20 17:54:06,199:INFO:gensim==3.8.3
+2022-02-20 17:54:06,200:INFO:spacy==2.3.7
+2022-02-20 17:54:06,201:INFO:nltk==3.6.5
+2022-02-20 17:54:06,202:INFO:textblob==0.17.1
+2022-02-20 17:54:06,203:INFO:pyLDAvis==3.2.2
+2022-02-20 17:54:06,204:INFO:wordcloud==1.8.1
+2022-02-20 17:54:06,205:INFO:mlflow==1.23.1
+2022-02-20 17:54:06,206:INFO:Checking Exceptions
+2022-02-20 17:54:06,754:INFO:Preloading libraries
+2022-02-20 17:54:06,755:INFO:Preparing display monitor
+2022-02-20 17:54:06,764:INFO:Importing libraries
+2022-02-20 17:54:06,765:INFO:Declaring global variables
+2022-02-20 17:54:06,766:INFO:Input provided : dataframe
+2022-02-20 17:54:06,767:INFO:session_id set to : 2000
+2022-02-20 17:54:06,768:INFO:Copying training dataset
+2022-02-20 17:54:06,770:INFO:Importing stopwords from nltk
+2022-02-20 17:54:06,773:INFO:No custom stopwords defined
+2022-02-20 17:54:06,776:INFO:Removing numeric characters from the text
+2022-02-20 17:54:06,782:INFO:Removing special characters from the text
+2022-02-20 17:54:06,801:INFO:Tokenizing Words
+2022-02-20 17:54:06,832:INFO:Removing stopwords
+2022-02-20 17:54:06,859:INFO:Extracting Bigrams
+2022-02-20 17:54:06,941:INFO:Extracting Trigrams
+2022-02-20 17:54:07,060:INFO:Lemmatizing tokens
+2022-02-20 17:54:08,529:INFO:Removing stopwords after lemmatizing
+2022-02-20 17:54:08,548:INFO:Creating corpus and dictionary
+2022-02-20 17:54:08,561:INFO:Compiling processed text
+2022-02-20 17:54:08,563:INFO:Compiling information grid
+2022-02-20 17:54:08,565:INFO:setup() succesfully completed......................................
+2022-02-20 17:54:08,580:INFO:Initializing create_model()
+2022-02-20 17:54:08,582:INFO:create_model(model=lda, multi_core=True, num_topics=6, verbose=False, system=True)
+2022-02-20 17:54:08,583:INFO:Checking exceptions
+2022-02-20 17:54:08,583:INFO:Preloading libraries
+2022-02-20 17:54:08,584:INFO:Preparing display monitor
+2022-02-20 17:54:08,593:INFO:Defining topic model
+2022-02-20 17:54:08,594:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:54:08,594:INFO:Defining num_topics parameter
+2022-02-20 17:54:08,595:INFO:num_topics set to: 6
+2022-02-20 17:54:08,597:INFO:LDA multi_core enabled
+2022-02-20 17:54:08,598:INFO:LdaMulticore imported successfully
+2022-02-20 17:54:09,602:INFO:LdaMulticore trained successfully
+2022-02-20 17:54:09,605:INFO:LdaModel(num_terms=1126, num_topics=6, decay=0.5, chunksize=100)
+2022-02-20 17:54:09,606:INFO:create_model() succesfully completed......................................
+2022-02-20 17:54:09,616:INFO:PyCaret NLP Module
+2022-02-20 17:54:09,617:INFO:version 2.3.5
+2022-02-20 17:54:09,618:INFO:Initializing setup()
+2022-02-20 17:54:09,619:INFO:USI: fe70
+2022-02-20 17:54:09,620:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2000, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=False)
+2022-02-20 17:54:09,621:INFO:Checking environment
+2022-02-20 17:54:09,622:INFO:python_version: 3.8.12
+2022-02-20 17:54:09,623:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-20 17:54:09,624:INFO:machine: x86_64
+2022-02-20 17:54:09,626:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-20 17:54:09,628:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-20 17:54:09,629:INFO:Checking libraries
+2022-02-20 17:54:09,630:INFO:pd==1.3.4
+2022-02-20 17:54:09,631:INFO:numpy==1.19.5
+2022-02-20 17:54:09,632:INFO:gensim==3.8.3
+2022-02-20 17:54:09,633:INFO:spacy==2.3.7
+2022-02-20 17:54:09,634:INFO:nltk==3.6.5
+2022-02-20 17:54:09,636:INFO:textblob==0.17.1
+2022-02-20 17:54:09,637:INFO:pyLDAvis==3.2.2
+2022-02-20 17:54:09,638:INFO:wordcloud==1.8.1
+2022-02-20 17:54:09,639:INFO:mlflow==1.23.1
+2022-02-20 17:54:09,640:INFO:Checking Exceptions
+2022-02-20 17:54:10,067:INFO:Preloading libraries
+2022-02-20 17:54:10,068:INFO:Preparing display monitor
+2022-02-20 17:54:10,076:INFO:Importing libraries
+2022-02-20 17:54:10,077:INFO:Declaring global variables
+2022-02-20 17:54:10,078:INFO:Input provided : dataframe
+2022-02-20 17:54:10,078:INFO:session_id set to : 2000
+2022-02-20 17:54:10,079:INFO:Copying training dataset
+2022-02-20 17:54:10,080:INFO:Importing stopwords from nltk
+2022-02-20 17:54:10,082:INFO:No custom stopwords defined
+2022-02-20 17:54:10,083:INFO:Removing numeric characters from the text
+2022-02-20 17:54:10,086:INFO:Removing special characters from the text
+2022-02-20 17:54:10,099:INFO:Tokenizing Words
+2022-02-20 17:54:10,124:INFO:Removing stopwords
+2022-02-20 17:54:10,150:INFO:Extracting Bigrams
+2022-02-20 17:54:10,221:INFO:Extracting Trigrams
+2022-02-20 17:54:10,323:INFO:Lemmatizing tokens
+2022-02-20 17:54:11,526:INFO:Removing stopwords after lemmatizing
+2022-02-20 17:54:11,541:INFO:Creating corpus and dictionary
+2022-02-20 17:54:11,550:INFO:Compiling processed text
+2022-02-20 17:54:11,552:INFO:Compiling information grid
+2022-02-20 17:54:11,553:INFO:setup() succesfully completed......................................
+2022-02-20 17:54:11,564:INFO:Initializing tune_model()
+2022-02-20 17:54:11,565:INFO:tune_model(model=lda, multi_core=True, supervised_target=None, estimator=None, optimize=None, custom_grid=None, auto_fe=True, fold=2, verbose=False)
+2022-02-20 17:54:11,566:INFO:Checking exceptions
+2022-02-20 17:54:11,566:INFO:Preloading libraries
+2022-02-20 17:54:11,567:INFO:Preparing display monitor
+2022-02-20 17:54:11,576:INFO:Importing libraries
+2022-02-20 17:54:11,583:INFO:Objective : Unsupervised
+2022-02-20 17:54:11,584:INFO:Defining model name
+2022-02-20 17:54:11,585:INFO:Topic Model Name: Latent Dirichlet Allocation
+2022-02-20 17:54:11,586:INFO:Defining supervised estimator
+2022-02-20 17:54:11,587:INFO:Estimator: None
+2022-02-20 17:54:11,588:INFO:Defining Optimizer
+2022-02-20 17:54:11,588:INFO:Optimize: None
+2022-02-20 17:54:11,590:INFO:Defining Tuning Grid
+2022-02-20 17:54:11,591:INFO:Pre-defined Grid used
+2022-02-20 17:54:11,592:INFO:Fitting Model with num_topics = 2
+2022-02-20 17:54:11,594:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:54:11,596:INFO:Initializing create_model()
+2022-02-20 17:54:11,597:INFO:create_model(model=lda, multi_core=True, num_topics=2, verbose=False, system=True)
+2022-02-20 17:54:11,598:INFO:Checking exceptions
+2022-02-20 17:54:11,599:INFO:Preloading libraries
+2022-02-20 17:54:11,600:INFO:Preparing display monitor
+2022-02-20 17:54:11,606:INFO:Defining topic model
+2022-02-20 17:54:11,608:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:54:11,609:INFO:Defining num_topics parameter
+2022-02-20 17:54:11,610:INFO:num_topics set to: 2
+2022-02-20 17:54:11,612:INFO:LDA multi_core enabled
+2022-02-20 17:54:11,612:INFO:LdaMulticore imported successfully
+2022-02-20 17:54:12,671:INFO:LdaMulticore trained successfully
+2022-02-20 17:54:12,673:INFO:LdaModel(num_terms=1126, num_topics=2, decay=0.5, chunksize=100)
+2022-02-20 17:54:12,674:INFO:create_model() succesfully completed......................................
+2022-02-20 17:54:12,675:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:54:12,676:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:54:12,678:INFO:Initializing assign_model()
+2022-02-20 17:54:12,679:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=2, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:54:12,680:INFO:Determining model type
+2022-02-20 17:54:12,680:INFO:model type: lda
+2022-02-20 17:54:12,681:INFO:Checking exceptions
+2022-02-20 17:54:12,682:INFO:Preloading libraries
+2022-02-20 17:54:12,683:INFO:Preparing display monitor
+2022-02-20 17:54:12,778:INFO:(200, 21)
+2022-02-20 17:54:12,779:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:54:12,780:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:54:12,781:INFO:Fitting Model with num_topics = 4
+2022-02-20 17:54:12,783:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:54:12,785:INFO:Initializing create_model()
+2022-02-20 17:54:12,785:INFO:create_model(model=lda, multi_core=True, num_topics=4, verbose=False, system=True)
+2022-02-20 17:54:12,786:INFO:Checking exceptions
+2022-02-20 17:54:12,787:INFO:Preloading libraries
+2022-02-20 17:54:12,788:INFO:Preparing display monitor
+2022-02-20 17:54:12,797:INFO:Defining topic model
+2022-02-20 17:54:12,799:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:54:12,800:INFO:Defining num_topics parameter
+2022-02-20 17:54:12,801:INFO:num_topics set to: 4
+2022-02-20 17:54:12,803:INFO:LDA multi_core enabled
+2022-02-20 17:54:12,805:INFO:LdaMulticore imported successfully
+2022-02-20 17:54:13,733:INFO:LdaMulticore trained successfully
+2022-02-20 17:54:13,736:INFO:LdaModel(num_terms=1126, num_topics=4, decay=0.5, chunksize=100)
+2022-02-20 17:54:13,736:INFO:create_model() succesfully completed......................................
+2022-02-20 17:54:13,737:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:54:13,738:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:54:13,740:INFO:Initializing assign_model()
+2022-02-20 17:54:13,741:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=4, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:54:13,741:INFO:Determining model type
+2022-02-20 17:54:13,742:INFO:model type: lda
+2022-02-20 17:54:13,743:INFO:Checking exceptions
+2022-02-20 17:54:13,744:INFO:Preloading libraries
+2022-02-20 17:54:13,744:INFO:Preparing display monitor
+2022-02-20 17:54:13,832:INFO:(200, 23)
+2022-02-20 17:54:13,833:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:54:13,834:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:54:13,835:INFO:Fitting Model with num_topics = 8
+2022-02-20 17:54:13,837:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:54:13,839:INFO:Initializing create_model()
+2022-02-20 17:54:13,840:INFO:create_model(model=lda, multi_core=True, num_topics=8, verbose=False, system=True)
+2022-02-20 17:54:13,840:INFO:Checking exceptions
+2022-02-20 17:54:13,841:INFO:Preloading libraries
+2022-02-20 17:54:13,842:INFO:Preparing display monitor
+2022-02-20 17:54:13,849:INFO:Defining topic model
+2022-02-20 17:54:13,850:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:54:13,851:INFO:Defining num_topics parameter
+2022-02-20 17:54:13,852:INFO:num_topics set to: 8
+2022-02-20 17:54:13,854:INFO:LDA multi_core enabled
+2022-02-20 17:54:13,855:INFO:LdaMulticore imported successfully
+2022-02-20 17:54:14,679:INFO:LdaMulticore trained successfully
+2022-02-20 17:54:14,681:INFO:LdaModel(num_terms=1126, num_topics=8, decay=0.5, chunksize=100)
+2022-02-20 17:54:14,682:INFO:create_model() succesfully completed......................................
+2022-02-20 17:54:14,683:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:54:14,683:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:54:14,686:INFO:Initializing assign_model()
+2022-02-20 17:54:14,686:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=8, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:54:14,687:INFO:Determining model type
+2022-02-20 17:54:14,688:INFO:model type: lda
+2022-02-20 17:54:14,689:INFO:Checking exceptions
+2022-02-20 17:54:14,689:INFO:Preloading libraries
+2022-02-20 17:54:14,690:INFO:Preparing display monitor
+2022-02-20 17:54:14,777:INFO:(200, 27)
+2022-02-20 17:54:14,778:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:54:14,779:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:54:14,782:INFO:Fitting Model with num_topics = 16
+2022-02-20 17:54:14,784:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:54:14,788:INFO:Initializing create_model()
+2022-02-20 17:54:14,789:INFO:create_model(model=lda, multi_core=True, num_topics=16, verbose=False, system=True)
+2022-02-20 17:54:14,790:INFO:Checking exceptions
+2022-02-20 17:54:14,790:INFO:Preloading libraries
+2022-02-20 17:54:14,791:INFO:Preparing display monitor
+2022-02-20 17:54:14,798:INFO:Defining topic model
+2022-02-20 17:54:14,799:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:54:14,799:INFO:Defining num_topics parameter
+2022-02-20 17:54:14,800:INFO:num_topics set to: 16
+2022-02-20 17:54:14,802:INFO:LDA multi_core enabled
+2022-02-20 17:54:14,802:INFO:LdaMulticore imported successfully
+2022-02-20 17:54:15,642:INFO:LdaMulticore trained successfully
+2022-02-20 17:54:15,644:INFO:LdaModel(num_terms=1126, num_topics=16, decay=0.5, chunksize=100)
+2022-02-20 17:54:15,645:INFO:create_model() succesfully completed......................................
+2022-02-20 17:54:15,646:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:54:15,647:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:54:15,649:INFO:Initializing assign_model()
+2022-02-20 17:54:15,650:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=16, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:54:15,651:INFO:Determining model type
+2022-02-20 17:54:15,651:INFO:model type: lda
+2022-02-20 17:54:15,652:INFO:Checking exceptions
+2022-02-20 17:54:15,653:INFO:Preloading libraries
+2022-02-20 17:54:15,653:INFO:Preparing display monitor
+2022-02-20 17:54:15,755:INFO:(200, 35)
+2022-02-20 17:54:15,756:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:54:15,757:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:54:15,758:INFO:Fitting Model with num_topics = 32
+2022-02-20 17:54:15,760:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:54:15,770:INFO:Initializing create_model()
+2022-02-20 17:54:15,775:INFO:create_model(model=lda, multi_core=True, num_topics=32, verbose=False, system=True)
+2022-02-20 17:54:15,777:INFO:Checking exceptions
+2022-02-20 17:54:15,778:INFO:Preloading libraries
+2022-02-20 17:54:15,779:INFO:Preparing display monitor
+2022-02-20 17:54:15,785:INFO:Defining topic model
+2022-02-20 17:54:15,786:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:54:15,787:INFO:Defining num_topics parameter
+2022-02-20 17:54:15,788:INFO:num_topics set to: 32
+2022-02-20 17:54:15,791:INFO:LDA multi_core enabled
+2022-02-20 17:54:15,792:INFO:LdaMulticore imported successfully
+2022-02-20 17:54:16,568:INFO:LdaMulticore trained successfully
+2022-02-20 17:54:16,571:INFO:LdaModel(num_terms=1126, num_topics=32, decay=0.5, chunksize=100)
+2022-02-20 17:54:16,572:INFO:create_model() succesfully completed......................................
+2022-02-20 17:54:16,572:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:54:16,573:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:54:16,575:INFO:Initializing assign_model()
+2022-02-20 17:54:16,576:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=32, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:54:16,577:INFO:Determining model type
+2022-02-20 17:54:16,578:INFO:model type: lda
+2022-02-20 17:54:16,578:INFO:Checking exceptions
+2022-02-20 17:54:16,579:INFO:Preloading libraries
+2022-02-20 17:54:16,580:INFO:Preparing display monitor
+2022-02-20 17:54:16,689:INFO:(200, 51)
+2022-02-20 17:54:16,690:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:54:16,693:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:54:16,695:INFO:Fitting Model with num_topics = 64
+2022-02-20 17:54:16,698:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:54:16,703:INFO:Initializing create_model()
+2022-02-20 17:54:16,704:INFO:create_model(model=lda, multi_core=True, num_topics=64, verbose=False, system=True)
+2022-02-20 17:54:16,705:INFO:Checking exceptions
+2022-02-20 17:54:16,706:INFO:Preloading libraries
+2022-02-20 17:54:16,707:INFO:Preparing display monitor
+2022-02-20 17:54:16,715:INFO:Defining topic model
+2022-02-20 17:54:16,716:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:54:16,717:INFO:Defining num_topics parameter
+2022-02-20 17:54:16,717:INFO:num_topics set to: 64
+2022-02-20 17:54:16,720:INFO:LDA multi_core enabled
+2022-02-20 17:54:16,721:INFO:LdaMulticore imported successfully
+2022-02-20 17:54:17,664:INFO:LdaMulticore trained successfully
+2022-02-20 17:54:17,666:INFO:LdaModel(num_terms=1126, num_topics=64, decay=0.5, chunksize=100)
+2022-02-20 17:54:17,667:INFO:create_model() succesfully completed......................................
+2022-02-20 17:54:17,668:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:54:17,669:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:54:17,671:INFO:Initializing assign_model()
+2022-02-20 17:54:17,672:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=64, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:54:17,673:INFO:Determining model type
+2022-02-20 17:54:17,673:INFO:model type: lda
+2022-02-20 17:54:17,674:INFO:Checking exceptions
+2022-02-20 17:54:17,675:INFO:Preloading libraries
+2022-02-20 17:54:17,675:INFO:Preparing display monitor
+2022-02-20 17:54:17,813:INFO:(200, 83)
+2022-02-20 17:54:17,814:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:54:17,817:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:54:17,818:INFO:Fitting Model with num_topics = 100
+2022-02-20 17:54:17,823:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:54:17,827:INFO:Initializing create_model()
+2022-02-20 17:54:17,828:INFO:create_model(model=lda, multi_core=True, num_topics=100, verbose=False, system=True)
+2022-02-20 17:54:17,829:INFO:Checking exceptions
+2022-02-20 17:54:17,830:INFO:Preloading libraries
+2022-02-20 17:54:17,830:INFO:Preparing display monitor
+2022-02-20 17:54:17,838:INFO:Defining topic model
+2022-02-20 17:54:17,839:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:54:17,840:INFO:Defining num_topics parameter
+2022-02-20 17:54:17,840:INFO:num_topics set to: 100
+2022-02-20 17:54:17,842:INFO:LDA multi_core enabled
+2022-02-20 17:54:17,843:INFO:LdaMulticore imported successfully
+2022-02-20 17:54:21,365:INFO:LdaMulticore trained successfully
+2022-02-20 17:54:21,368:INFO:LdaModel(num_terms=1126, num_topics=100, decay=0.5, chunksize=100)
+2022-02-20 17:54:21,370:INFO:create_model() succesfully completed......................................
+2022-02-20 17:54:21,371:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:54:21,371:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:54:21,374:INFO:Initializing assign_model()
+2022-02-20 17:54:21,375:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=100, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:54:21,375:INFO:Determining model type
+2022-02-20 17:54:21,376:INFO:model type: lda
+2022-02-20 17:54:21,377:INFO:Checking exceptions
+2022-02-20 17:54:21,377:INFO:Preloading libraries
+2022-02-20 17:54:21,378:INFO:Preparing display monitor
+2022-02-20 17:54:21,663:INFO:(200, 119)
+2022-02-20 17:54:21,665:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:54:21,667:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:54:21,669:INFO:Fitting Model with num_topics = 200
+2022-02-20 17:54:21,672:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:54:21,674:INFO:Initializing create_model()
+2022-02-20 17:54:21,675:INFO:create_model(model=lda, multi_core=True, num_topics=200, verbose=False, system=True)
+2022-02-20 17:54:21,676:INFO:Checking exceptions
+2022-02-20 17:54:21,678:INFO:Preloading libraries
+2022-02-20 17:54:21,678:INFO:Preparing display monitor
+2022-02-20 17:54:21,696:INFO:Defining topic model
+2022-02-20 17:54:21,698:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:54:21,699:INFO:Defining num_topics parameter
+2022-02-20 17:54:21,701:INFO:num_topics set to: 200
+2022-02-20 17:54:21,704:INFO:LDA multi_core enabled
+2022-02-20 17:54:21,705:INFO:LdaMulticore imported successfully
+2022-02-20 17:54:26,789:INFO:LdaMulticore trained successfully
+2022-02-20 17:54:26,792:INFO:LdaModel(num_terms=1126, num_topics=200, decay=0.5, chunksize=100)
+2022-02-20 17:54:26,793:INFO:create_model() succesfully completed......................................
+2022-02-20 17:54:26,795:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:54:26,796:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:54:26,799:INFO:Initializing assign_model()
+2022-02-20 17:54:26,800:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=200, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:54:26,801:INFO:Determining model type
+2022-02-20 17:54:26,802:INFO:model type: lda
+2022-02-20 17:54:26,803:INFO:Checking exceptions
+2022-02-20 17:54:26,804:INFO:Preloading libraries
+2022-02-20 17:54:26,805:INFO:Preparing display monitor
+2022-02-20 17:54:27,292:INFO:(200, 219)
+2022-02-20 17:54:27,293:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:54:27,297:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:54:27,298:INFO:Fitting Model with num_topics = 300
+2022-02-20 17:54:27,300:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:54:27,302:INFO:Initializing create_model()
+2022-02-20 17:54:27,303:INFO:create_model(model=lda, multi_core=True, num_topics=300, verbose=False, system=True)
+2022-02-20 17:54:27,304:INFO:Checking exceptions
+2022-02-20 17:54:27,304:INFO:Preloading libraries
+2022-02-20 17:54:27,305:INFO:Preparing display monitor
+2022-02-20 17:54:27,313:INFO:Defining topic model
+2022-02-20 17:54:27,314:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:54:27,315:INFO:Defining num_topics parameter
+2022-02-20 17:54:27,316:INFO:num_topics set to: 300
+2022-02-20 17:54:27,317:INFO:LDA multi_core enabled
+2022-02-20 17:54:27,318:INFO:LdaMulticore imported successfully
+2022-02-20 17:54:34,012:INFO:LdaMulticore trained successfully
+2022-02-20 17:54:34,015:INFO:LdaModel(num_terms=1126, num_topics=300, decay=0.5, chunksize=100)
+2022-02-20 17:54:34,016:INFO:create_model() succesfully completed......................................
+2022-02-20 17:54:34,017:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:54:34,018:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:54:34,020:INFO:Initializing assign_model()
+2022-02-20 17:54:34,021:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=300, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:54:34,022:INFO:Determining model type
+2022-02-20 17:54:34,023:INFO:model type: lda
+2022-02-20 17:54:34,023:INFO:Checking exceptions
+2022-02-20 17:54:34,024:INFO:Preloading libraries
+2022-02-20 17:54:34,025:INFO:Preparing display monitor
+2022-02-20 17:54:34,718:INFO:(200, 319)
+2022-02-20 17:54:34,720:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:54:34,725:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:54:34,726:INFO:Fitting Model with num_topics = 400
+2022-02-20 17:54:34,731:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:54:34,734:INFO:Initializing create_model()
+2022-02-20 17:54:34,735:INFO:create_model(model=lda, multi_core=True, num_topics=400, verbose=False, system=True)
+2022-02-20 17:54:34,736:INFO:Checking exceptions
+2022-02-20 17:54:34,737:INFO:Preloading libraries
+2022-02-20 17:54:34,737:INFO:Preparing display monitor
+2022-02-20 17:54:34,746:INFO:Defining topic model
+2022-02-20 17:54:34,748:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:54:34,749:INFO:Defining num_topics parameter
+2022-02-20 17:54:34,751:INFO:num_topics set to: 400
+2022-02-20 17:54:34,753:INFO:LDA multi_core enabled
+2022-02-20 17:54:34,755:INFO:LdaMulticore imported successfully
+2022-02-20 17:54:42,756:INFO:LdaMulticore trained successfully
+2022-02-20 17:54:42,759:INFO:LdaModel(num_terms=1126, num_topics=400, decay=0.5, chunksize=100)
+2022-02-20 17:54:42,760:INFO:create_model() succesfully completed......................................
+2022-02-20 17:54:42,771:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:54:42,772:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:54:42,778:INFO:Initializing assign_model()
+2022-02-20 17:54:42,779:INFO:assign_model(model=LdaModel(num_terms=1126, num_topics=400, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:54:42,780:INFO:Determining model type
+2022-02-20 17:54:42,780:INFO:model type: lda
+2022-02-20 17:54:42,781:INFO:Checking exceptions
+2022-02-20 17:54:42,782:INFO:Preloading libraries
+2022-02-20 17:54:42,783:INFO:Preparing display monitor
+2022-02-20 17:54:43,587:INFO:(200, 419)
+2022-02-20 17:54:43,588:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:54:43,592:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:54:43,593:INFO:Problem : Unsupervised
+2022-02-20 17:54:43,594:INFO:CoherenceModel imported successfully
+2022-02-20 17:54:43,595:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=2, decay=0.5, chunksize=100)
+2022-02-20 17:54:44,116:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=4, decay=0.5, chunksize=100)
+2022-02-20 17:54:44,685:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=8, decay=0.5, chunksize=100)
+2022-02-20 17:54:45,418:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=16, decay=0.5, chunksize=100)
+2022-02-20 17:54:46,489:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=32, decay=0.5, chunksize=100)
+2022-02-20 17:54:48,302:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=64, decay=0.5, chunksize=100)
+2022-02-20 17:54:51,540:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=100, decay=0.5, chunksize=100)
+2022-02-20 17:54:55,796:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=200, decay=0.5, chunksize=100)
+2022-02-20 17:55:01,570:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=300, decay=0.5, chunksize=100)
+2022-02-20 17:55:09,100:INFO:Evaluating Coherence with num_topics: LdaModel(num_terms=1126, num_topics=400, decay=0.5, chunksize=100)
+2022-02-20 17:55:16,259:INFO:Creating metrics dataframe
+2022-02-20 17:55:16,263:INFO:Rendering Visual
+2022-02-20 17:55:16,314:INFO:Visual Rendered Successfully
+2022-02-20 17:55:16,319:INFO:LdaModel(num_terms=1126, num_topics=100, decay=0.5, chunksize=100)
+2022-02-20 17:55:16,320:INFO:tune_model() succesfully completed......................................
+2022-02-20 17:55:16,334:INFO:PyCaret NLP Module
+2022-02-20 17:55:16,335:INFO:version 2.3.5
+2022-02-20 17:55:16,335:INFO:Initializing setup()
+2022-02-20 17:55:16,336:INFO:USI: 296c
+2022-02-20 17:55:16,337:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2000, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=False)
+2022-02-20 17:55:16,338:INFO:Checking environment
+2022-02-20 17:55:16,339:INFO:python_version: 3.8.12
+2022-02-20 17:55:16,339:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-20 17:55:16,340:INFO:machine: x86_64
+2022-02-20 17:55:16,341:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-20 17:55:16,342:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-20 17:55:16,342:INFO:Checking libraries
+2022-02-20 17:55:16,343:INFO:pd==1.3.4
+2022-02-20 17:55:16,344:INFO:numpy==1.19.5
+2022-02-20 17:55:16,344:INFO:gensim==3.8.3
+2022-02-20 17:55:16,345:INFO:spacy==2.3.7
+2022-02-20 17:55:16,346:INFO:nltk==3.6.5
+2022-02-20 17:55:16,346:INFO:textblob==0.17.1
+2022-02-20 17:55:16,347:INFO:pyLDAvis==3.2.2
+2022-02-20 17:55:16,347:INFO:wordcloud==1.8.1
+2022-02-20 17:55:16,348:INFO:mlflow==1.23.1
+2022-02-20 17:55:16,349:INFO:Checking Exceptions
+2022-02-20 17:55:16,926:INFO:Preloading libraries
+2022-02-20 17:55:16,927:INFO:Preparing display monitor
+2022-02-20 17:55:16,934:INFO:Importing libraries
+2022-02-20 17:55:16,935:INFO:Declaring global variables
+2022-02-20 17:55:16,935:INFO:Input provided : dataframe
+2022-02-20 17:55:16,936:INFO:session_id set to : 2000
+2022-02-20 17:55:16,937:INFO:Copying training dataset
+2022-02-20 17:55:16,938:INFO:Importing stopwords from nltk
+2022-02-20 17:55:16,939:INFO:No custom stopwords defined
+2022-02-20 17:55:16,941:INFO:Removing numeric characters from the text
+2022-02-20 17:55:16,944:INFO:Removing special characters from the text
+2022-02-20 17:55:16,958:INFO:Tokenizing Words
+2022-02-20 17:55:16,982:INFO:Removing stopwords
+2022-02-20 17:55:17,006:INFO:Extracting Bigrams
+2022-02-20 17:55:17,080:INFO:Extracting Trigrams
+2022-02-20 17:55:17,190:INFO:Lemmatizing tokens
+2022-02-20 17:55:18,147:INFO:Removing stopwords after lemmatizing
+2022-02-20 17:55:18,164:INFO:Creating corpus and dictionary
+2022-02-20 17:55:18,174:INFO:Compiling processed text
+2022-02-20 17:55:18,176:INFO:Compiling information grid
+2022-02-20 17:55:18,178:INFO:setup() succesfully completed......................................
+2022-02-20 17:55:27,701:INFO:PyCaret NLP Module
+2022-02-20 17:55:27,702:INFO:version 2.3.5
+2022-02-20 17:55:27,702:INFO:Initializing setup()
+2022-02-20 17:55:27,703:INFO:USI: 33d4
+2022-02-20 17:55:27,703:INFO:setup(data=(2000, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2480, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=True)
+2022-02-20 17:55:27,704:INFO:Checking environment
+2022-02-20 17:55:27,705:INFO:python_version: 3.8.12
+2022-02-20 17:55:27,705:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-20 17:55:27,706:INFO:machine: x86_64
+2022-02-20 17:55:27,706:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-20 17:55:27,707:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-20 17:55:27,708:INFO:Checking libraries
+2022-02-20 17:55:27,708:INFO:pd==1.3.4
+2022-02-20 17:55:27,709:INFO:numpy==1.19.5
+2022-02-20 17:55:27,710:INFO:gensim==3.8.3
+2022-02-20 17:55:27,710:INFO:spacy==2.3.7
+2022-02-20 17:55:27,711:INFO:nltk==3.6.5
+2022-02-20 17:55:27,711:INFO:textblob==0.17.1
+2022-02-20 17:55:27,712:INFO:pyLDAvis==3.2.2
+2022-02-20 17:55:27,713:INFO:wordcloud==1.8.1
+2022-02-20 17:55:27,714:INFO:mlflow==1.23.1
+2022-02-20 17:55:27,714:INFO:Checking Exceptions
+2022-02-20 17:55:28,287:INFO:Preloading libraries
+2022-02-20 17:55:28,288:INFO:Preparing display monitor
+2022-02-20 17:55:28,302:INFO:Importing libraries
+2022-02-20 17:55:28,303:INFO:Declaring global variables
+2022-02-20 17:55:28,304:INFO:Input provided : dataframe
+2022-02-20 17:55:28,305:INFO:session_id set to : 2480
+2022-02-20 17:55:28,306:INFO:Copying training dataset
+2022-02-20 17:55:28,309:INFO:Importing stopwords from nltk
+2022-02-20 17:55:28,312:INFO:No custom stopwords defined
+2022-02-20 17:55:28,314:INFO:Removing numeric characters from the text
+2022-02-20 17:55:28,357:INFO:Removing special characters from the text
+2022-02-20 17:55:28,631:INFO:Tokenizing Words
+2022-02-20 17:55:29,073:INFO:Removing stopwords
+2022-02-20 17:55:29,563:INFO:Extracting Bigrams
+2022-02-20 17:55:30,720:INFO:Extracting Trigrams
+2022-02-20 17:55:32,634:INFO:Lemmatizing tokens
+2022-02-20 17:55:40,715:INFO:Removing stopwords after lemmatizing
+2022-02-20 17:55:40,995:INFO:Creating corpus and dictionary
+2022-02-20 17:55:41,153:INFO:Compiling processed text
+2022-02-20 17:55:41,157:INFO:Compiling information grid
+2022-02-20 17:55:41,163:INFO:setup() succesfully completed......................................
+2022-02-20 17:55:41,188:INFO:Initializing tune_model()
+2022-02-20 17:55:41,189:INFO:tune_model(model=lda, multi_core=True, supervised_target=None, estimator=None, optimize=None, custom_grid=None, auto_fe=True, fold=10, verbose=True)
+2022-02-20 17:55:41,190:INFO:Checking exceptions
+2022-02-20 17:55:41,191:INFO:Preloading libraries
+2022-02-20 17:55:41,192:INFO:Preparing display monitor
+2022-02-20 17:55:41,216:INFO:Importing libraries
+2022-02-20 17:55:41,221:INFO:Objective : Unsupervised
+2022-02-20 17:55:41,222:INFO:Defining model name
+2022-02-20 17:55:41,223:INFO:Topic Model Name: Latent Dirichlet Allocation
+2022-02-20 17:55:41,224:INFO:Defining supervised estimator
+2022-02-20 17:55:41,225:INFO:Estimator: None
+2022-02-20 17:55:41,225:INFO:Defining Optimizer
+2022-02-20 17:55:41,226:INFO:Optimize: None
+2022-02-20 17:55:41,227:INFO:Defining Tuning Grid
+2022-02-20 17:55:41,228:INFO:Pre-defined Grid used
+2022-02-20 17:55:41,234:INFO:Fitting Model with num_topics = 2
+2022-02-20 17:55:41,240:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:55:41,242:INFO:Initializing create_model()
+2022-02-20 17:55:41,243:INFO:create_model(model=lda, multi_core=True, num_topics=2, verbose=False, system=True)
+2022-02-20 17:55:41,244:INFO:Checking exceptions
+2022-02-20 17:55:41,244:INFO:Preloading libraries
+2022-02-20 17:55:41,245:INFO:Preparing display monitor
+2022-02-20 17:55:41,252:INFO:Defining topic model
+2022-02-20 17:55:41,253:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:55:41,255:INFO:Defining num_topics parameter
+2022-02-20 17:55:41,255:INFO:num_topics set to: 2
+2022-02-20 17:55:41,258:INFO:LDA multi_core enabled
+2022-02-20 17:55:41,258:INFO:LdaMulticore imported successfully
+2022-02-20 17:55:45,868:INFO:LdaMulticore trained successfully
+2022-02-20 17:55:45,871:INFO:LdaModel(num_terms=4964, num_topics=2, decay=0.5, chunksize=100)
+2022-02-20 17:55:45,871:INFO:create_model() succesfully completed......................................
+2022-02-20 17:55:45,872:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:55:45,873:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:55:45,875:INFO:Initializing assign_model()
+2022-02-20 17:55:45,876:INFO:assign_model(model=LdaModel(num_terms=4964, num_topics=2, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:55:45,877:INFO:Determining model type
+2022-02-20 17:55:45,878:INFO:model type: lda
+2022-02-20 17:55:45,879:INFO:Checking exceptions
+2022-02-20 17:55:45,879:INFO:Preloading libraries
+2022-02-20 17:55:45,880:INFO:Preparing display monitor
+2022-02-20 17:55:47,452:INFO:(3807, 21)
+2022-02-20 17:55:47,454:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:55:47,456:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:55:47,457:INFO:Fitting Model with num_topics = 4
+2022-02-20 17:55:47,467:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:55:47,473:INFO:Initializing create_model()
+2022-02-20 17:55:47,475:INFO:create_model(model=lda, multi_core=True, num_topics=4, verbose=False, system=True)
+2022-02-20 17:55:47,486:INFO:Checking exceptions
+2022-02-20 17:55:47,487:INFO:Preloading libraries
+2022-02-20 17:55:47,488:INFO:Preparing display monitor
+2022-02-20 17:55:47,507:INFO:Defining topic model
+2022-02-20 17:55:47,509:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:55:47,510:INFO:Defining num_topics parameter
+2022-02-20 17:55:47,511:INFO:num_topics set to: 4
+2022-02-20 17:55:47,513:INFO:LDA multi_core enabled
+2022-02-20 17:55:47,515:INFO:LdaMulticore imported successfully
+2022-02-20 17:55:52,776:INFO:LdaMulticore trained successfully
+2022-02-20 17:55:52,778:INFO:LdaModel(num_terms=4964, num_topics=4, decay=0.5, chunksize=100)
+2022-02-20 17:55:52,778:INFO:create_model() succesfully completed......................................
+2022-02-20 17:55:52,780:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:55:52,780:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:55:52,782:INFO:Initializing assign_model()
+2022-02-20 17:55:52,783:INFO:assign_model(model=LdaModel(num_terms=4964, num_topics=4, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:55:52,784:INFO:Determining model type
+2022-02-20 17:55:52,785:INFO:model type: lda
+2022-02-20 17:55:52,785:INFO:Checking exceptions
+2022-02-20 17:55:52,786:INFO:Preloading libraries
+2022-02-20 17:55:52,787:INFO:Preparing display monitor
+2022-02-20 17:55:54,443:INFO:(3807, 23)
+2022-02-20 17:55:54,444:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:55:54,447:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:55:54,448:INFO:Fitting Model with num_topics = 8
+2022-02-20 17:55:54,459:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:55:54,466:INFO:Initializing create_model()
+2022-02-20 17:55:54,470:INFO:create_model(model=lda, multi_core=True, num_topics=8, verbose=False, system=True)
+2022-02-20 17:55:54,471:INFO:Checking exceptions
+2022-02-20 17:55:54,472:INFO:Preloading libraries
+2022-02-20 17:55:54,474:INFO:Preparing display monitor
+2022-02-20 17:55:54,482:INFO:Defining topic model
+2022-02-20 17:55:54,483:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:55:54,485:INFO:Defining num_topics parameter
+2022-02-20 17:55:54,486:INFO:num_topics set to: 8
+2022-02-20 17:55:54,489:INFO:LDA multi_core enabled
+2022-02-20 17:55:54,491:INFO:LdaMulticore imported successfully
+2022-02-20 17:55:59,910:INFO:LdaMulticore trained successfully
+2022-02-20 17:55:59,914:INFO:LdaModel(num_terms=4964, num_topics=8, decay=0.5, chunksize=100)
+2022-02-20 17:55:59,915:INFO:create_model() succesfully completed......................................
+2022-02-20 17:55:59,916:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:55:59,917:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:55:59,920:INFO:Initializing assign_model()
+2022-02-20 17:55:59,921:INFO:assign_model(model=LdaModel(num_terms=4964, num_topics=8, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:55:59,922:INFO:Determining model type
+2022-02-20 17:55:59,923:INFO:model type: lda
+2022-02-20 17:55:59,924:INFO:Checking exceptions
+2022-02-20 17:55:59,924:INFO:Preloading libraries
+2022-02-20 17:55:59,925:INFO:Preparing display monitor
+2022-02-20 17:56:02,180:INFO:(3807, 27)
+2022-02-20 17:56:02,181:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:56:02,188:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:56:02,189:INFO:Fitting Model with num_topics = 16
+2022-02-20 17:56:02,207:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:56:02,212:INFO:Initializing create_model()
+2022-02-20 17:56:02,228:INFO:create_model(model=lda, multi_core=True, num_topics=16, verbose=False, system=True)
+2022-02-20 17:56:02,232:INFO:Checking exceptions
+2022-02-20 17:56:02,235:INFO:Preloading libraries
+2022-02-20 17:56:02,237:INFO:Preparing display monitor
+2022-02-20 17:56:02,249:INFO:Defining topic model
+2022-02-20 17:56:02,250:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:56:02,252:INFO:Defining num_topics parameter
+2022-02-20 17:56:02,257:INFO:num_topics set to: 16
+2022-02-20 17:56:02,264:INFO:LDA multi_core enabled
+2022-02-20 17:56:02,269:INFO:LdaMulticore imported successfully
+2022-02-20 17:56:07,822:INFO:LdaMulticore trained successfully
+2022-02-20 17:56:07,825:INFO:LdaModel(num_terms=4964, num_topics=16, decay=0.5, chunksize=100)
+2022-02-20 17:56:07,826:INFO:create_model() succesfully completed......................................
+2022-02-20 17:56:07,827:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:56:07,828:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:56:07,831:INFO:Initializing assign_model()
+2022-02-20 17:56:07,832:INFO:assign_model(model=LdaModel(num_terms=4964, num_topics=16, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:56:07,832:INFO:Determining model type
+2022-02-20 17:56:07,833:INFO:model type: lda
+2022-02-20 17:56:07,834:INFO:Checking exceptions
+2022-02-20 17:56:07,835:INFO:Preloading libraries
+2022-02-20 17:56:07,835:INFO:Preparing display monitor
+2022-02-20 17:56:10,033:INFO:(3807, 35)
+2022-02-20 17:56:10,034:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:56:10,041:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:56:10,043:INFO:Fitting Model with num_topics = 32
+2022-02-20 17:56:10,058:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:56:10,064:INFO:Initializing create_model()
+2022-02-20 17:56:10,065:INFO:create_model(model=lda, multi_core=True, num_topics=32, verbose=False, system=True)
+2022-02-20 17:56:10,066:INFO:Checking exceptions
+2022-02-20 17:56:10,067:INFO:Preloading libraries
+2022-02-20 17:56:10,070:INFO:Preparing display monitor
+2022-02-20 17:56:10,079:INFO:Defining topic model
+2022-02-20 17:56:10,080:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:56:10,082:INFO:Defining num_topics parameter
+2022-02-20 17:56:10,083:INFO:num_topics set to: 32
+2022-02-20 17:56:10,088:INFO:LDA multi_core enabled
+2022-02-20 17:56:10,091:INFO:LdaMulticore imported successfully
+2022-02-20 17:56:16,427:INFO:LdaMulticore trained successfully
+2022-02-20 17:56:16,430:INFO:LdaModel(num_terms=4964, num_topics=32, decay=0.5, chunksize=100)
+2022-02-20 17:56:16,431:INFO:create_model() succesfully completed......................................
+2022-02-20 17:56:16,432:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:56:16,433:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:56:16,435:INFO:Initializing assign_model()
+2022-02-20 17:56:16,436:INFO:assign_model(model=LdaModel(num_terms=4964, num_topics=32, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:56:16,437:INFO:Determining model type
+2022-02-20 17:56:16,438:INFO:model type: lda
+2022-02-20 17:56:16,438:INFO:Checking exceptions
+2022-02-20 17:56:16,439:INFO:Preloading libraries
+2022-02-20 17:56:16,440:INFO:Preparing display monitor
+2022-02-20 17:56:18,788:INFO:(3807, 51)
+2022-02-20 17:56:18,790:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:56:18,798:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:56:18,799:INFO:Fitting Model with num_topics = 64
+2022-02-20 17:56:18,811:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:56:18,821:INFO:Initializing create_model()
+2022-02-20 17:56:18,823:INFO:create_model(model=lda, multi_core=True, num_topics=64, verbose=False, system=True)
+2022-02-20 17:56:18,823:INFO:Checking exceptions
+2022-02-20 17:56:18,824:INFO:Preloading libraries
+2022-02-20 17:56:18,827:INFO:Preparing display monitor
+2022-02-20 17:56:18,838:INFO:Defining topic model
+2022-02-20 17:56:18,840:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:56:18,841:INFO:Defining num_topics parameter
+2022-02-20 17:56:18,844:INFO:num_topics set to: 64
+2022-02-20 17:56:18,847:INFO:LDA multi_core enabled
+2022-02-20 17:56:18,848:INFO:LdaMulticore imported successfully
+2022-02-20 17:56:34,563:INFO:LdaMulticore trained successfully
+2022-02-20 17:56:34,566:INFO:LdaModel(num_terms=4964, num_topics=64, decay=0.5, chunksize=100)
+2022-02-20 17:56:34,567:INFO:create_model() succesfully completed......................................
+2022-02-20 17:56:34,568:INFO:SubProcess create_model() end ==================================
+2022-02-20 17:56:34,568:INFO:SubProcess assign_model() called ==================================
+2022-02-20 17:56:34,572:INFO:Initializing assign_model()
+2022-02-20 17:56:34,573:INFO:assign_model(model=LdaModel(num_terms=4964, num_topics=64, decay=0.5, chunksize=100), verbose=False)
+2022-02-20 17:56:34,575:INFO:Determining model type
+2022-02-20 17:56:34,576:INFO:model type: lda
+2022-02-20 17:56:34,577:INFO:Checking exceptions
+2022-02-20 17:56:34,578:INFO:Preloading libraries
+2022-02-20 17:56:34,578:INFO:Preparing display monitor
+2022-02-20 17:56:38,072:INFO:(3807, 83)
+2022-02-20 17:56:38,073:INFO:assign_model() succesfully completed......................................
+2022-02-20 17:56:38,088:INFO:SubProcess assign_model() end ==================================
+2022-02-20 17:56:38,089:INFO:Fitting Model with num_topics = 100
+2022-02-20 17:56:38,102:INFO:SubProcess create_model() called ==================================
+2022-02-20 17:56:38,107:INFO:Initializing create_model()
+2022-02-20 17:56:38,108:INFO:create_model(model=lda, multi_core=True, num_topics=100, verbose=False, system=True)
+2022-02-20 17:56:38,109:INFO:Checking exceptions
+2022-02-20 17:56:38,110:INFO:Preloading libraries
+2022-02-20 17:56:38,114:INFO:Preparing display monitor
+2022-02-20 17:56:38,121:INFO:Defining topic model
+2022-02-20 17:56:38,122:INFO:Model: Latent Dirichlet Allocation
+2022-02-20 17:56:38,123:INFO:Defining num_topics parameter
+2022-02-20 17:56:38,125:INFO:num_topics set to: 100
+2022-02-20 17:56:38,127:INFO:LDA multi_core enabled
+2022-02-20 17:56:38,129:INFO:LdaMulticore imported successfully
