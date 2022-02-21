@@ -6403,3 +6403,941 @@
 2022-02-21 09:42:24,016:INFO:Preparing display monitor
 2022-02-21 09:42:24,116:INFO:(100, 26)
 2022-02-21 09:42:24,136:INFO:assign_model() succesfully completed......................................
+2022-02-21 13:45:27,205:INFO:PyCaret NLP Module
+2022-02-21 13:45:27,208:INFO:version 2.3.6
+2022-02-21 13:45:27,209:INFO:Initializing setup()
+2022-02-21 13:45:27,212:INFO:USI: ba9c
+2022-02-21 13:45:27,213:INFO:setup(data=(1000, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2000, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=False)
+2022-02-21 13:45:27,215:INFO:Checking environment
+2022-02-21 13:45:27,216:INFO:python_version: 3.8.12
+2022-02-21 13:45:27,217:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-21 13:45:27,218:INFO:machine: x86_64
+2022-02-21 13:45:27,219:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-21 13:45:27,220:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-21 13:45:27,222:INFO:Checking libraries
+2022-02-21 13:45:27,223:INFO:pd==1.3.4
+2022-02-21 13:45:27,224:INFO:numpy==1.19.5
+2022-02-21 13:45:27,225:INFO:gensim==3.8.3
+2022-02-21 13:45:27,752:INFO:spacy==2.3.7
+2022-02-21 13:45:28,104:INFO:nltk==3.6.5
+2022-02-21 13:45:28,154:INFO:textblob==0.17.1
+2022-02-21 13:45:28,276:INFO:pyLDAvis==3.2.2
+2022-02-21 13:45:28,278:INFO:wordcloud==1.8.1
+2022-02-21 13:45:28,975:INFO:mlflow==1.23.1
+2022-02-21 13:45:28,978:INFO:Checking Exceptions
+2022-02-21 13:45:30,492:INFO:Preloading libraries
+2022-02-21 13:45:30,494:INFO:Preparing display monitor
+2022-02-21 13:45:30,510:INFO:Importing libraries
+2022-02-21 13:45:30,515:INFO:Declaring global variables
+2022-02-21 13:45:30,518:INFO:Input provided : dataframe
+2022-02-21 13:45:30,520:INFO:session_id set to : 2000
+2022-02-21 13:45:30,522:INFO:Copying training dataset
+2022-02-21 13:45:30,525:INFO:Importing stopwords from nltk
+2022-02-21 13:45:30,641:INFO:No custom stopwords defined
+2022-02-21 13:45:30,644:INFO:Removing numeric characters from the text
+2022-02-21 13:45:30,690:INFO:Removing special characters from the text
+2022-02-21 13:45:31,042:INFO:Tokenizing Words
+2022-02-21 13:45:31,643:INFO:Removing stopwords
+2022-02-21 13:45:32,276:INFO:Extracting Bigrams
+2022-02-21 13:45:33,911:INFO:Extracting Trigrams
+2022-02-21 13:45:36,433:INFO:Lemmatizing tokens
+2022-02-21 13:45:46,788:INFO:Removing stopwords after lemmatizing
+2022-02-21 13:45:47,163:INFO:Creating corpus and dictionary
+2022-02-21 13:45:47,338:INFO:Compiling processed text
+2022-02-21 13:45:47,341:INFO:Compiling information grid
+2022-02-21 13:45:47,440:INFO:setup() succesfully completed......................................
+2022-02-21 13:45:47,446:INFO:Initializing create_model()
+2022-02-21 13:45:47,447:INFO:create_model(model=lda, multi_core=True, num_topics=6, verbose=False, system=True)
+2022-02-21 13:45:47,449:INFO:Checking exceptions
+2022-02-21 13:45:47,450:INFO:Preloading libraries
+2022-02-21 13:45:47,453:INFO:Preparing display monitor
+2022-02-21 13:45:47,475:INFO:Defining topic model
+2022-02-21 13:45:47,476:INFO:Model: Latent Dirichlet Allocation
+2022-02-21 13:45:47,479:INFO:Defining num_topics parameter
+2022-02-21 13:45:47,487:INFO:num_topics set to: 6
+2022-02-21 13:45:47,494:INFO:LDA multi_core enabled
+2022-02-21 13:45:47,497:INFO:LdaMulticore imported successfully
+2022-02-21 13:46:00,241:INFO:LdaMulticore trained successfully
+2022-02-21 13:46:00,247:INFO:LdaModel(num_terms=3547, num_topics=6, decay=0.5, chunksize=100)
+2022-02-21 13:46:00,251:INFO:create_model() succesfully completed......................................
+2022-02-21 13:46:00,258:INFO:Initializing assign_model()
+2022-02-21 13:46:00,261:INFO:assign_model(model=LdaModel(num_terms=3547, num_topics=6, decay=0.5, chunksize=100), verbose=False)
+2022-02-21 13:46:00,262:INFO:Determining model type
+2022-02-21 13:46:00,268:INFO:model type: lda
+2022-02-21 13:46:00,272:INFO:Checking exceptions
+2022-02-21 13:46:00,273:INFO:Preloading libraries
+2022-02-21 13:46:00,274:INFO:Preparing display monitor
+2022-02-21 13:46:02,282:INFO:(1000, 25)
+2022-02-21 13:46:02,283:INFO:assign_model() succesfully completed......................................
+2022-02-21 13:46:06,538:INFO:PyCaret NLP Module
+2022-02-21 13:46:06,540:INFO:version 2.3.6
+2022-02-21 13:46:06,542:INFO:Initializing setup()
+2022-02-21 13:46:06,545:INFO:USI: a510
+2022-02-21 13:46:06,546:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2480, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=True)
+2022-02-21 13:46:06,547:INFO:Checking environment
+2022-02-21 13:46:06,548:INFO:python_version: 3.8.12
+2022-02-21 13:46:06,550:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-21 13:46:06,551:INFO:machine: x86_64
+2022-02-21 13:46:06,552:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-21 13:46:06,554:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-21 13:46:06,556:INFO:Checking libraries
+2022-02-21 13:46:06,558:INFO:pd==1.3.4
+2022-02-21 13:46:06,560:INFO:numpy==1.19.5
+2022-02-21 13:46:06,562:INFO:gensim==3.8.3
+2022-02-21 13:46:06,563:INFO:spacy==2.3.7
+2022-02-21 13:46:06,564:INFO:nltk==3.6.5
+2022-02-21 13:46:06,565:INFO:textblob==0.17.1
+2022-02-21 13:46:06,567:INFO:pyLDAvis==3.2.2
+2022-02-21 13:46:06,568:INFO:wordcloud==1.8.1
+2022-02-21 13:46:06,569:INFO:mlflow==1.23.1
+2022-02-21 13:46:06,571:INFO:Checking Exceptions
+2022-02-21 13:46:07,879:INFO:Preloading libraries
+2022-02-21 13:46:07,883:INFO:Preparing display monitor
+2022-02-21 13:46:07,919:INFO:Importing libraries
+2022-02-21 13:46:07,927:INFO:Declaring global variables
+2022-02-21 13:46:07,930:INFO:Input provided : dataframe
+2022-02-21 13:46:07,932:INFO:session_id set to : 2480
+2022-02-21 13:46:07,935:INFO:Copying training dataset
+2022-02-21 13:46:07,938:INFO:Importing stopwords from nltk
+2022-02-21 13:46:07,943:INFO:No custom stopwords defined
+2022-02-21 13:46:07,945:INFO:Removing numeric characters from the text
+2022-02-21 13:46:07,963:INFO:Removing special characters from the text
+2022-02-21 13:46:08,013:INFO:Tokenizing Words
+2022-02-21 13:46:08,100:INFO:Removing stopwords
+2022-02-21 13:46:08,209:INFO:Extracting Bigrams
+2022-02-21 13:46:08,482:INFO:Extracting Trigrams
+2022-02-21 13:46:08,826:INFO:Lemmatizing tokens
+2022-02-21 13:46:11,349:INFO:Removing stopwords after lemmatizing
+2022-02-21 13:46:11,403:INFO:Creating corpus and dictionary
+2022-02-21 13:46:11,439:INFO:Compiling processed text
+2022-02-21 13:46:11,443:INFO:Compiling information grid
+2022-02-21 13:46:11,459:INFO:setup() succesfully completed......................................
+2022-02-21 13:46:11,489:INFO:Initializing create_model()
+2022-02-21 13:46:11,490:INFO:create_model(model=lda, multi_core=True, num_topics=7, verbose=False, system=True)
+2022-02-21 13:46:11,492:INFO:Checking exceptions
+2022-02-21 13:46:11,494:INFO:Preloading libraries
+2022-02-21 13:46:11,497:INFO:Preparing display monitor
+2022-02-21 13:46:11,510:INFO:Defining topic model
+2022-02-21 13:46:11,513:INFO:Model: Latent Dirichlet Allocation
+2022-02-21 13:46:11,514:INFO:Defining num_topics parameter
+2022-02-21 13:46:11,515:INFO:num_topics set to: 7
+2022-02-21 13:46:11,519:INFO:LDA multi_core enabled
+2022-02-21 13:46:11,520:INFO:LdaMulticore imported successfully
+2022-02-21 13:46:13,843:INFO:LdaMulticore trained successfully
+2022-02-21 13:46:13,849:INFO:LdaModel(num_terms=1190, num_topics=7, decay=0.5, chunksize=100)
+2022-02-21 13:46:13,852:INFO:create_model() succesfully completed......................................
+2022-02-21 13:46:13,861:INFO:Initializing assign_model()
+2022-02-21 13:46:13,862:INFO:assign_model(model=LdaModel(num_terms=1190, num_topics=7, decay=0.5, chunksize=100), verbose=False)
+2022-02-21 13:46:13,864:INFO:Determining model type
+2022-02-21 13:46:13,865:INFO:model type: lda
+2022-02-21 13:46:13,866:INFO:Checking exceptions
+2022-02-21 13:46:13,868:INFO:Preloading libraries
+2022-02-21 13:46:13,869:INFO:Preparing display monitor
+2022-02-21 13:46:14,074:INFO:(100, 26)
+2022-02-21 13:46:14,077:INFO:assign_model() succesfully completed......................................
+2022-02-21 13:46:58,540:INFO:PyCaret NLP Module
+2022-02-21 13:46:58,543:INFO:version 2.3.6
+2022-02-21 13:46:58,545:INFO:Initializing setup()
+2022-02-21 13:46:58,546:INFO:USI: 5d48
+2022-02-21 13:46:58,548:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2480, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=True)
+2022-02-21 13:46:58,558:INFO:Checking environment
+2022-02-21 13:46:58,566:INFO:python_version: 3.8.12
+2022-02-21 13:46:58,569:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-21 13:46:58,574:INFO:machine: x86_64
+2022-02-21 13:46:58,575:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-21 13:46:58,577:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-21 13:46:58,580:INFO:Checking libraries
+2022-02-21 13:46:58,583:INFO:pd==1.3.4
+2022-02-21 13:46:58,585:INFO:numpy==1.19.5
+2022-02-21 13:46:58,587:INFO:gensim==3.8.3
+2022-02-21 13:46:58,589:INFO:spacy==2.3.7
+2022-02-21 13:46:58,591:INFO:nltk==3.6.5
+2022-02-21 13:46:58,593:INFO:textblob==0.17.1
+2022-02-21 13:46:58,594:INFO:pyLDAvis==3.2.2
+2022-02-21 13:46:58,595:INFO:wordcloud==1.8.1
+2022-02-21 13:46:58,596:INFO:mlflow==1.23.1
+2022-02-21 13:46:58,598:INFO:Checking Exceptions
+2022-02-21 13:46:59,734:INFO:Preloading libraries
+2022-02-21 13:46:59,737:INFO:Preparing display monitor
+2022-02-21 13:46:59,769:INFO:Importing libraries
+2022-02-21 13:46:59,774:INFO:Declaring global variables
+2022-02-21 13:46:59,776:INFO:Input provided : dataframe
+2022-02-21 13:46:59,780:INFO:session_id set to : 2480
+2022-02-21 13:46:59,782:INFO:Copying training dataset
+2022-02-21 13:46:59,787:INFO:Importing stopwords from nltk
+2022-02-21 13:46:59,794:INFO:No custom stopwords defined
+2022-02-21 13:46:59,799:INFO:Removing numeric characters from the text
+2022-02-21 13:46:59,822:INFO:Removing special characters from the text
+2022-02-21 13:46:59,909:INFO:Tokenizing Words
+2022-02-21 13:47:00,027:INFO:Removing stopwords
+2022-02-21 13:47:00,132:INFO:Extracting Bigrams
+2022-02-21 13:47:00,449:INFO:Extracting Trigrams
+2022-02-21 13:47:00,950:INFO:Lemmatizing tokens
+2022-02-21 13:47:03,757:INFO:Removing stopwords after lemmatizing
+2022-02-21 13:47:03,805:INFO:Creating corpus and dictionary
+2022-02-21 13:47:03,848:INFO:Compiling processed text
+2022-02-21 13:47:03,854:INFO:Compiling information grid
+2022-02-21 13:47:03,876:INFO:setup() succesfully completed......................................
+2022-02-21 13:47:03,905:INFO:Initializing create_model()
+2022-02-21 13:47:03,907:INFO:create_model(model=lda, multi_core=True, num_topics=7, verbose=False, system=True)
+2022-02-21 13:47:03,911:INFO:Checking exceptions
+2022-02-21 13:47:03,912:INFO:Preloading libraries
+2022-02-21 13:47:03,915:INFO:Preparing display monitor
+2022-02-21 13:47:03,938:INFO:Defining topic model
+2022-02-21 13:47:03,939:INFO:Model: Latent Dirichlet Allocation
+2022-02-21 13:47:03,941:INFO:Defining num_topics parameter
+2022-02-21 13:47:03,943:INFO:num_topics set to: 7
+2022-02-21 13:47:03,947:INFO:LDA multi_core enabled
+2022-02-21 13:47:03,948:INFO:LdaMulticore imported successfully
+2022-02-21 13:47:06,315:INFO:LdaMulticore trained successfully
+2022-02-21 13:47:06,323:INFO:LdaModel(num_terms=1190, num_topics=7, decay=0.5, chunksize=100)
+2022-02-21 13:47:06,327:INFO:create_model() succesfully completed......................................
+2022-02-21 13:47:06,334:INFO:Initializing assign_model()
+2022-02-21 13:47:06,336:INFO:assign_model(model=LdaModel(num_terms=1190, num_topics=7, decay=0.5, chunksize=100), verbose=False)
+2022-02-21 13:47:06,340:INFO:Determining model type
+2022-02-21 13:47:06,342:INFO:model type: lda
+2022-02-21 13:47:06,343:INFO:Checking exceptions
+2022-02-21 13:47:06,345:INFO:Preloading libraries
+2022-02-21 13:47:06,346:INFO:Preparing display monitor
+2022-02-21 13:47:06,593:INFO:(100, 26)
+2022-02-21 13:47:06,596:INFO:assign_model() succesfully completed......................................
+2022-02-21 14:05:25,697:INFO:PyCaret NLP Module
+2022-02-21 14:05:25,705:INFO:version 2.3.6
+2022-02-21 14:05:25,708:INFO:Initializing setup()
+2022-02-21 14:05:25,710:INFO:USI: 2c28
+2022-02-21 14:05:25,711:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2480, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=True)
+2022-02-21 14:05:25,712:INFO:Checking environment
+2022-02-21 14:05:25,715:INFO:python_version: 3.8.12
+2022-02-21 14:05:25,716:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-21 14:05:25,719:INFO:machine: x86_64
+2022-02-21 14:05:25,722:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-21 14:05:25,736:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-21 14:05:25,737:INFO:Checking libraries
+2022-02-21 14:05:25,738:INFO:pd==1.3.4
+2022-02-21 14:05:25,739:INFO:numpy==1.19.5
+2022-02-21 14:05:25,741:INFO:gensim==3.8.3
+2022-02-21 14:05:25,743:INFO:spacy==2.3.7
+2022-02-21 14:05:25,748:INFO:nltk==3.6.5
+2022-02-21 14:05:25,751:INFO:textblob==0.17.1
+2022-02-21 14:05:25,752:INFO:pyLDAvis==3.2.2
+2022-02-21 14:05:25,753:INFO:wordcloud==1.8.1
+2022-02-21 14:05:25,755:INFO:mlflow==1.23.1
+2022-02-21 14:05:25,756:INFO:Checking Exceptions
+2022-02-21 14:05:27,092:INFO:Preloading libraries
+2022-02-21 14:05:27,113:INFO:Preparing display monitor
+2022-02-21 14:05:27,191:INFO:Importing libraries
+2022-02-21 14:05:27,212:INFO:Declaring global variables
+2022-02-21 14:05:27,228:INFO:Input provided : dataframe
+2022-02-21 14:05:27,231:INFO:session_id set to : 2480
+2022-02-21 14:05:27,234:INFO:Copying training dataset
+2022-02-21 14:05:27,239:INFO:Importing stopwords from nltk
+2022-02-21 14:05:27,260:INFO:No custom stopwords defined
+2022-02-21 14:05:27,270:INFO:Removing numeric characters from the text
+2022-02-21 14:05:27,304:INFO:Removing special characters from the text
+2022-02-21 14:05:27,399:INFO:Tokenizing Words
+2022-02-21 14:05:27,536:INFO:Removing stopwords
+2022-02-21 14:05:27,648:INFO:Extracting Bigrams
+2022-02-21 14:05:28,014:INFO:Extracting Trigrams
+2022-02-21 14:05:28,381:INFO:Lemmatizing tokens
+2022-02-21 14:05:31,824:INFO:Removing stopwords after lemmatizing
+2022-02-21 14:05:31,873:INFO:Creating corpus and dictionary
+2022-02-21 14:05:31,910:INFO:Compiling processed text
+2022-02-21 14:05:31,913:INFO:Compiling information grid
+2022-02-21 14:05:31,933:INFO:setup() succesfully completed......................................
+2022-02-21 14:05:31,968:INFO:Initializing create_model()
+2022-02-21 14:05:31,969:INFO:create_model(model=lda, multi_core=True, num_topics=7, verbose=False, system=True)
+2022-02-21 14:05:31,971:INFO:Checking exceptions
+2022-02-21 14:05:31,973:INFO:Preloading libraries
+2022-02-21 14:05:31,975:INFO:Preparing display monitor
+2022-02-21 14:05:31,992:INFO:Defining topic model
+2022-02-21 14:05:31,996:INFO:Model: Latent Dirichlet Allocation
+2022-02-21 14:05:32,003:INFO:Defining num_topics parameter
+2022-02-21 14:05:32,008:INFO:num_topics set to: 7
+2022-02-21 14:05:32,014:INFO:LDA multi_core enabled
+2022-02-21 14:05:32,016:INFO:LdaMulticore imported successfully
+2022-02-21 14:05:34,686:INFO:LdaMulticore trained successfully
+2022-02-21 14:05:34,689:INFO:LdaModel(num_terms=1190, num_topics=7, decay=0.5, chunksize=100)
+2022-02-21 14:05:34,691:INFO:create_model() succesfully completed......................................
+2022-02-21 14:05:34,698:INFO:Initializing assign_model()
+2022-02-21 14:05:34,700:INFO:assign_model(model=LdaModel(num_terms=1190, num_topics=7, decay=0.5, chunksize=100), verbose=False)
+2022-02-21 14:05:34,702:INFO:Determining model type
+2022-02-21 14:05:34,703:INFO:model type: lda
+2022-02-21 14:05:34,704:INFO:Checking exceptions
+2022-02-21 14:05:34,708:INFO:Preloading libraries
+2022-02-21 14:05:34,712:INFO:Preparing display monitor
+2022-02-21 14:05:34,908:INFO:(100, 26)
+2022-02-21 14:05:34,910:INFO:assign_model() succesfully completed......................................
+2022-02-21 14:16:08,147:INFO:PyCaret NLP Module
+2022-02-21 14:16:08,151:INFO:version 2.3.6
+2022-02-21 14:16:08,152:INFO:Initializing setup()
+2022-02-21 14:16:08,153:INFO:USI: 572e
+2022-02-21 14:16:08,155:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2480, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=True)
+2022-02-21 14:16:08,160:INFO:Checking environment
+2022-02-21 14:16:08,161:INFO:python_version: 3.8.12
+2022-02-21 14:16:08,162:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-21 14:16:08,164:INFO:machine: x86_64
+2022-02-21 14:16:08,166:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-21 14:16:08,168:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-21 14:16:08,169:INFO:Checking libraries
+2022-02-21 14:16:08,170:INFO:pd==1.3.4
+2022-02-21 14:16:08,172:INFO:numpy==1.19.5
+2022-02-21 14:16:08,173:INFO:gensim==3.8.3
+2022-02-21 14:16:08,174:INFO:spacy==2.3.7
+2022-02-21 14:16:08,176:INFO:nltk==3.6.5
+2022-02-21 14:16:08,179:INFO:textblob==0.17.1
+2022-02-21 14:16:08,183:INFO:pyLDAvis==3.2.2
+2022-02-21 14:16:08,184:INFO:wordcloud==1.8.1
+2022-02-21 14:16:08,185:INFO:mlflow==1.23.1
+2022-02-21 14:16:08,186:INFO:Checking Exceptions
+2022-02-21 14:16:09,316:INFO:Preloading libraries
+2022-02-21 14:16:09,320:INFO:Preparing display monitor
+2022-02-21 14:16:09,348:INFO:Importing libraries
+2022-02-21 14:16:09,352:INFO:Declaring global variables
+2022-02-21 14:16:09,355:INFO:Input provided : dataframe
+2022-02-21 14:16:09,357:INFO:session_id set to : 2480
+2022-02-21 14:16:09,362:INFO:Copying training dataset
+2022-02-21 14:16:09,371:INFO:Importing stopwords from nltk
+2022-02-21 14:16:09,375:INFO:No custom stopwords defined
+2022-02-21 14:16:09,379:INFO:Removing numeric characters from the text
+2022-02-21 14:16:09,404:INFO:Removing special characters from the text
+2022-02-21 14:16:09,465:INFO:Tokenizing Words
+2022-02-21 14:16:09,556:INFO:Removing stopwords
+2022-02-21 14:16:09,672:INFO:Extracting Bigrams
+2022-02-21 14:16:09,966:INFO:Extracting Trigrams
+2022-02-21 14:16:10,430:INFO:Lemmatizing tokens
+2022-02-21 14:16:13,120:INFO:Removing stopwords after lemmatizing
+2022-02-21 14:16:13,175:INFO:Creating corpus and dictionary
+2022-02-21 14:16:13,209:INFO:Compiling processed text
+2022-02-21 14:16:13,216:INFO:Compiling information grid
+2022-02-21 14:16:13,228:INFO:setup() succesfully completed......................................
+2022-02-21 14:16:13,263:INFO:Initializing create_model()
+2022-02-21 14:16:13,270:INFO:create_model(model=lda, multi_core=True, num_topics=7, verbose=False, system=True)
+2022-02-21 14:16:13,272:INFO:Checking exceptions
+2022-02-21 14:16:13,274:INFO:Preloading libraries
+2022-02-21 14:16:13,276:INFO:Preparing display monitor
+2022-02-21 14:16:13,295:INFO:Defining topic model
+2022-02-21 14:16:13,297:INFO:Model: Latent Dirichlet Allocation
+2022-02-21 14:16:13,298:INFO:Defining num_topics parameter
+2022-02-21 14:16:13,299:INFO:num_topics set to: 7
+2022-02-21 14:16:13,303:INFO:LDA multi_core enabled
+2022-02-21 14:16:13,306:INFO:LdaMulticore imported successfully
+2022-02-21 14:16:15,624:INFO:LdaMulticore trained successfully
+2022-02-21 14:16:15,628:INFO:LdaModel(num_terms=1190, num_topics=7, decay=0.5, chunksize=100)
+2022-02-21 14:16:15,631:INFO:create_model() succesfully completed......................................
+2022-02-21 14:16:15,638:INFO:Initializing assign_model()
+2022-02-21 14:16:15,639:INFO:assign_model(model=LdaModel(num_terms=1190, num_topics=7, decay=0.5, chunksize=100), verbose=False)
+2022-02-21 14:16:15,657:INFO:Determining model type
+2022-02-21 14:16:15,658:INFO:model type: lda
+2022-02-21 14:16:15,659:INFO:Checking exceptions
+2022-02-21 14:16:15,660:INFO:Preloading libraries
+2022-02-21 14:16:15,661:INFO:Preparing display monitor
+2022-02-21 14:16:15,901:INFO:(100, 26)
+2022-02-21 14:16:15,902:INFO:assign_model() succesfully completed......................................
+2022-02-21 14:16:54,770:INFO:PyCaret NLP Module
+2022-02-21 14:16:54,771:INFO:version 2.3.6
+2022-02-21 14:16:54,773:INFO:Initializing setup()
+2022-02-21 14:16:54,774:INFO:USI: e30a
+2022-02-21 14:16:54,775:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2480, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=True)
+2022-02-21 14:16:54,777:INFO:Checking environment
+2022-02-21 14:16:54,779:INFO:python_version: 3.8.12
+2022-02-21 14:16:54,780:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-21 14:16:54,781:INFO:machine: x86_64
+2022-02-21 14:16:54,782:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-21 14:16:54,784:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-21 14:16:54,785:INFO:Checking libraries
+2022-02-21 14:16:54,786:INFO:pd==1.3.4
+2022-02-21 14:16:54,787:INFO:numpy==1.19.5
+2022-02-21 14:16:54,788:INFO:gensim==3.8.3
+2022-02-21 14:16:54,789:INFO:spacy==2.3.7
+2022-02-21 14:16:54,791:INFO:nltk==3.6.5
+2022-02-21 14:16:54,793:INFO:textblob==0.17.1
+2022-02-21 14:16:54,794:INFO:pyLDAvis==3.2.2
+2022-02-21 14:16:54,795:INFO:wordcloud==1.8.1
+2022-02-21 14:16:54,796:INFO:mlflow==1.23.1
+2022-02-21 14:16:54,797:INFO:Checking Exceptions
+2022-02-21 14:16:55,836:INFO:Preloading libraries
+2022-02-21 14:16:55,838:INFO:Preparing display monitor
+2022-02-21 14:16:55,867:INFO:Importing libraries
+2022-02-21 14:16:55,869:INFO:Declaring global variables
+2022-02-21 14:16:55,870:INFO:Input provided : dataframe
+2022-02-21 14:16:55,871:INFO:session_id set to : 2480
+2022-02-21 14:16:55,872:INFO:Copying training dataset
+2022-02-21 14:16:55,875:INFO:Importing stopwords from nltk
+2022-02-21 14:16:55,879:INFO:No custom stopwords defined
+2022-02-21 14:16:55,881:INFO:Removing numeric characters from the text
+2022-02-21 14:16:55,898:INFO:Removing special characters from the text
+2022-02-21 14:16:55,955:INFO:Tokenizing Words
+2022-02-21 14:16:56,086:INFO:Removing stopwords
+2022-02-21 14:16:56,193:INFO:Extracting Bigrams
+2022-02-21 14:16:56,453:INFO:Extracting Trigrams
+2022-02-21 14:16:56,828:INFO:Lemmatizing tokens
+2022-02-21 14:16:59,440:INFO:Removing stopwords after lemmatizing
+2022-02-21 14:16:59,491:INFO:Creating corpus and dictionary
+2022-02-21 14:16:59,524:INFO:Compiling processed text
+2022-02-21 14:16:59,538:INFO:Compiling information grid
+2022-02-21 14:16:59,564:INFO:setup() succesfully completed......................................
+2022-02-21 14:16:59,603:INFO:Initializing create_model()
+2022-02-21 14:16:59,606:INFO:create_model(model=lda, multi_core=True, num_topics=7, verbose=False, system=True)
+2022-02-21 14:16:59,609:INFO:Checking exceptions
+2022-02-21 14:16:59,614:INFO:Preloading libraries
+2022-02-21 14:16:59,616:INFO:Preparing display monitor
+2022-02-21 14:16:59,648:INFO:Defining topic model
+2022-02-21 14:16:59,650:INFO:Model: Latent Dirichlet Allocation
+2022-02-21 14:16:59,653:INFO:Defining num_topics parameter
+2022-02-21 14:16:59,655:INFO:num_topics set to: 7
+2022-02-21 14:16:59,662:INFO:LDA multi_core enabled
+2022-02-21 14:16:59,665:INFO:LdaMulticore imported successfully
+2022-02-21 14:17:02,019:INFO:LdaMulticore trained successfully
+2022-02-21 14:17:02,025:INFO:LdaModel(num_terms=1190, num_topics=7, decay=0.5, chunksize=100)
+2022-02-21 14:17:02,027:INFO:create_model() succesfully completed......................................
+2022-02-21 14:17:02,032:INFO:Initializing assign_model()
+2022-02-21 14:17:02,033:INFO:assign_model(model=LdaModel(num_terms=1190, num_topics=7, decay=0.5, chunksize=100), verbose=False)
+2022-02-21 14:17:02,034:INFO:Determining model type
+2022-02-21 14:17:02,039:INFO:model type: lda
+2022-02-21 14:17:02,042:INFO:Checking exceptions
+2022-02-21 14:17:02,043:INFO:Preloading libraries
+2022-02-21 14:17:02,045:INFO:Preparing display monitor
+2022-02-21 14:17:02,273:INFO:(100, 26)
+2022-02-21 14:17:02,274:INFO:assign_model() succesfully completed......................................
+2022-02-21 14:18:03,001:INFO:PyCaret NLP Module
+2022-02-21 14:18:03,004:INFO:version 2.3.6
+2022-02-21 14:18:03,006:INFO:Initializing setup()
+2022-02-21 14:18:03,010:INFO:USI: bff1
+2022-02-21 14:18:03,013:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2480, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=True)
+2022-02-21 14:18:03,016:INFO:Checking environment
+2022-02-21 14:18:03,027:INFO:python_version: 3.8.12
+2022-02-21 14:18:03,036:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-21 14:18:03,046:INFO:machine: x86_64
+2022-02-21 14:18:03,050:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-21 14:18:03,052:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-21 14:18:03,054:INFO:Checking libraries
+2022-02-21 14:18:03,055:INFO:pd==1.3.4
+2022-02-21 14:18:03,056:INFO:numpy==1.19.5
+2022-02-21 14:18:03,057:INFO:gensim==3.8.3
+2022-02-21 14:18:03,059:INFO:spacy==2.3.7
+2022-02-21 14:18:03,060:INFO:nltk==3.6.5
+2022-02-21 14:18:03,063:INFO:textblob==0.17.1
+2022-02-21 14:18:03,064:INFO:pyLDAvis==3.2.2
+2022-02-21 14:18:03,065:INFO:wordcloud==1.8.1
+2022-02-21 14:18:03,067:INFO:mlflow==1.23.1
+2022-02-21 14:18:03,068:INFO:Checking Exceptions
+2022-02-21 14:18:04,303:INFO:Preloading libraries
+2022-02-21 14:18:04,306:INFO:Preparing display monitor
+2022-02-21 14:18:04,334:INFO:Importing libraries
+2022-02-21 14:18:04,335:INFO:Declaring global variables
+2022-02-21 14:18:04,339:INFO:Input provided : dataframe
+2022-02-21 14:18:04,341:INFO:session_id set to : 2480
+2022-02-21 14:18:04,344:INFO:Copying training dataset
+2022-02-21 14:18:04,350:INFO:Importing stopwords from nltk
+2022-02-21 14:18:04,354:INFO:No custom stopwords defined
+2022-02-21 14:18:04,361:INFO:Removing numeric characters from the text
+2022-02-21 14:18:04,391:INFO:Removing special characters from the text
+2022-02-21 14:18:04,507:INFO:Tokenizing Words
+2022-02-21 14:18:04,610:INFO:Removing stopwords
+2022-02-21 14:18:04,690:INFO:Extracting Bigrams
+2022-02-21 14:18:04,985:INFO:Extracting Trigrams
+2022-02-21 14:18:05,437:INFO:Lemmatizing tokens
+2022-02-21 14:18:08,277:INFO:Removing stopwords after lemmatizing
+2022-02-21 14:18:08,327:INFO:Creating corpus and dictionary
+2022-02-21 14:18:08,365:INFO:Compiling processed text
+2022-02-21 14:18:08,368:INFO:Compiling information grid
+2022-02-21 14:18:08,377:INFO:setup() succesfully completed......................................
+2022-02-21 14:18:08,409:INFO:Initializing create_model()
+2022-02-21 14:18:08,411:INFO:create_model(model=lda, multi_core=True, num_topics=7, verbose=False, system=True)
+2022-02-21 14:18:08,412:INFO:Checking exceptions
+2022-02-21 14:18:08,413:INFO:Preloading libraries
+2022-02-21 14:18:08,415:INFO:Preparing display monitor
+2022-02-21 14:18:08,439:INFO:Defining topic model
+2022-02-21 14:18:08,440:INFO:Model: Latent Dirichlet Allocation
+2022-02-21 14:18:08,442:INFO:Defining num_topics parameter
+2022-02-21 14:18:08,443:INFO:num_topics set to: 7
+2022-02-21 14:18:08,448:INFO:LDA multi_core enabled
+2022-02-21 14:18:08,450:INFO:LdaMulticore imported successfully
+2022-02-21 14:18:11,018:INFO:LdaMulticore trained successfully
+2022-02-21 14:18:11,025:INFO:LdaModel(num_terms=1190, num_topics=7, decay=0.5, chunksize=100)
+2022-02-21 14:18:11,027:INFO:create_model() succesfully completed......................................
+2022-02-21 14:18:11,039:INFO:Initializing assign_model()
+2022-02-21 14:18:11,042:INFO:assign_model(model=LdaModel(num_terms=1190, num_topics=7, decay=0.5, chunksize=100), verbose=False)
+2022-02-21 14:18:11,044:INFO:Determining model type
+2022-02-21 14:18:11,046:INFO:model type: lda
+2022-02-21 14:18:11,047:INFO:Checking exceptions
+2022-02-21 14:18:11,048:INFO:Preloading libraries
+2022-02-21 14:18:11,049:INFO:Preparing display monitor
+2022-02-21 14:18:11,297:INFO:(100, 26)
+2022-02-21 14:18:11,310:INFO:assign_model() succesfully completed......................................
+2022-02-21 14:48:21,459:INFO:PyCaret NLP Module
+2022-02-21 14:48:21,462:INFO:version 2.3.6
+2022-02-21 14:48:21,464:INFO:Initializing setup()
+2022-02-21 14:48:21,466:INFO:USI: ec75
+2022-02-21 14:48:21,468:INFO:setup(data=(1000, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2000, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=False)
+2022-02-21 14:48:21,470:INFO:Checking environment
+2022-02-21 14:48:21,471:INFO:python_version: 3.8.12
+2022-02-21 14:48:21,474:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-21 14:48:21,477:INFO:machine: x86_64
+2022-02-21 14:48:21,482:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-21 14:48:21,484:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-21 14:48:21,486:INFO:Checking libraries
+2022-02-21 14:48:21,488:INFO:pd==1.3.4
+2022-02-21 14:48:21,492:INFO:numpy==1.19.5
+2022-02-21 14:48:21,496:INFO:gensim==3.8.3
+2022-02-21 14:48:21,823:INFO:spacy==2.3.7
+2022-02-21 14:48:22,327:INFO:nltk==3.6.5
+2022-02-21 14:48:22,370:INFO:textblob==0.17.1
+2022-02-21 14:48:22,493:INFO:pyLDAvis==3.2.2
+2022-02-21 14:48:22,495:INFO:wordcloud==1.8.1
+2022-02-21 14:48:23,116:INFO:mlflow==1.23.1
+2022-02-21 14:48:23,120:INFO:Checking Exceptions
+2022-02-21 14:48:24,647:INFO:Preloading libraries
+2022-02-21 14:48:24,651:INFO:Preparing display monitor
+2022-02-21 14:48:24,706:INFO:Importing libraries
+2022-02-21 14:48:24,722:INFO:Declaring global variables
+2022-02-21 14:48:24,731:INFO:Input provided : dataframe
+2022-02-21 14:48:24,735:INFO:session_id set to : 2000
+2022-02-21 14:48:24,738:INFO:Copying training dataset
+2022-02-21 14:48:24,745:INFO:Importing stopwords from nltk
+2022-02-21 14:48:24,882:INFO:No custom stopwords defined
+2022-02-21 14:48:24,885:INFO:Removing numeric characters from the text
+2022-02-21 14:48:24,927:INFO:Removing special characters from the text
+2022-02-21 14:48:25,250:INFO:Tokenizing Words
+2022-02-21 14:48:25,809:INFO:Removing stopwords
+2022-02-21 14:48:26,397:INFO:Extracting Bigrams
+2022-02-21 14:48:27,858:INFO:Extracting Trigrams
+2022-02-21 14:48:30,042:INFO:Lemmatizing tokens
+2022-02-21 14:48:39,884:INFO:Removing stopwords after lemmatizing
+2022-02-21 14:48:40,204:INFO:Creating corpus and dictionary
+2022-02-21 14:48:40,379:INFO:Compiling processed text
+2022-02-21 14:48:40,385:INFO:Compiling information grid
+2022-02-21 14:48:40,481:INFO:setup() succesfully completed......................................
+2022-02-21 14:48:40,486:INFO:Initializing create_model()
+2022-02-21 14:48:40,487:INFO:create_model(model=lda, multi_core=True, num_topics=6, verbose=False, system=True)
+2022-02-21 14:48:40,488:INFO:Checking exceptions
+2022-02-21 14:48:40,490:INFO:Preloading libraries
+2022-02-21 14:48:40,491:INFO:Preparing display monitor
+2022-02-21 14:48:40,506:INFO:Defining topic model
+2022-02-21 14:48:40,509:INFO:Model: Latent Dirichlet Allocation
+2022-02-21 14:48:40,510:INFO:Defining num_topics parameter
+2022-02-21 14:48:40,511:INFO:num_topics set to: 6
+2022-02-21 14:48:40,525:INFO:LDA multi_core enabled
+2022-02-21 14:48:40,526:INFO:LdaMulticore imported successfully
+2022-02-21 14:48:48,338:INFO:LdaMulticore trained successfully
+2022-02-21 14:48:48,342:INFO:LdaModel(num_terms=3547, num_topics=6, decay=0.5, chunksize=100)
+2022-02-21 14:48:48,343:INFO:create_model() succesfully completed......................................
+2022-02-21 14:48:48,346:INFO:Initializing assign_model()
+2022-02-21 14:48:48,347:INFO:assign_model(model=LdaModel(num_terms=3547, num_topics=6, decay=0.5, chunksize=100), verbose=False)
+2022-02-21 14:48:48,348:INFO:Determining model type
+2022-02-21 14:48:48,350:INFO:model type: lda
+2022-02-21 14:48:48,354:INFO:Checking exceptions
+2022-02-21 14:48:48,355:INFO:Preloading libraries
+2022-02-21 14:48:48,356:INFO:Preparing display monitor
+2022-02-21 14:48:50,567:INFO:(1000, 25)
+2022-02-21 14:48:50,569:INFO:assign_model() succesfully completed......................................
+2022-02-21 14:48:54,149:INFO:PyCaret NLP Module
+2022-02-21 14:48:54,152:INFO:version 2.3.6
+2022-02-21 14:48:54,154:INFO:Initializing setup()
+2022-02-21 14:48:54,159:INFO:USI: 5515
+2022-02-21 14:48:54,162:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2480, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=True)
+2022-02-21 14:48:54,165:INFO:Checking environment
+2022-02-21 14:48:54,172:INFO:python_version: 3.8.12
+2022-02-21 14:48:54,175:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-21 14:48:54,183:INFO:machine: x86_64
+2022-02-21 14:48:54,186:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-21 14:48:54,189:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-21 14:48:54,197:INFO:Checking libraries
+2022-02-21 14:48:54,200:INFO:pd==1.3.4
+2022-02-21 14:48:54,203:INFO:numpy==1.19.5
+2022-02-21 14:48:54,207:INFO:gensim==3.8.3
+2022-02-21 14:48:54,211:INFO:spacy==2.3.7
+2022-02-21 14:48:54,214:INFO:nltk==3.6.5
+2022-02-21 14:48:54,217:INFO:textblob==0.17.1
+2022-02-21 14:48:54,219:INFO:pyLDAvis==3.2.2
+2022-02-21 14:48:54,221:INFO:wordcloud==1.8.1
+2022-02-21 14:48:54,227:INFO:mlflow==1.23.1
+2022-02-21 14:48:54,230:INFO:Checking Exceptions
+2022-02-21 14:48:55,638:INFO:Preloading libraries
+2022-02-21 14:48:55,640:INFO:Preparing display monitor
+2022-02-21 14:48:55,683:INFO:Importing libraries
+2022-02-21 14:48:55,685:INFO:Declaring global variables
+2022-02-21 14:48:55,687:INFO:Input provided : dataframe
+2022-02-21 14:48:55,688:INFO:session_id set to : 2480
+2022-02-21 14:48:55,690:INFO:Copying training dataset
+2022-02-21 14:48:55,693:INFO:Importing stopwords from nltk
+2022-02-21 14:48:55,698:INFO:No custom stopwords defined
+2022-02-21 14:48:55,702:INFO:Removing numeric characters from the text
+2022-02-21 14:48:55,718:INFO:Removing special characters from the text
+2022-02-21 14:48:55,764:INFO:Tokenizing Words
+2022-02-21 14:48:55,850:INFO:Removing stopwords
+2022-02-21 14:48:55,976:INFO:Extracting Bigrams
+2022-02-21 14:48:56,215:INFO:Extracting Trigrams
+2022-02-21 14:48:56,550:INFO:Lemmatizing tokens
+2022-02-21 14:48:59,117:INFO:Removing stopwords after lemmatizing
+2022-02-21 14:48:59,175:INFO:Creating corpus and dictionary
+2022-02-21 14:48:59,211:INFO:Compiling processed text
+2022-02-21 14:48:59,214:INFO:Compiling information grid
+2022-02-21 14:48:59,226:INFO:setup() succesfully completed......................................
+2022-02-21 14:48:59,263:INFO:Initializing create_model()
+2022-02-21 14:48:59,265:INFO:create_model(model=lda, multi_core=True, num_topics=7, verbose=False, system=True)
+2022-02-21 14:48:59,266:INFO:Checking exceptions
+2022-02-21 14:48:59,268:INFO:Preloading libraries
+2022-02-21 14:48:59,269:INFO:Preparing display monitor
+2022-02-21 14:48:59,288:INFO:Defining topic model
+2022-02-21 14:48:59,290:INFO:Model: Latent Dirichlet Allocation
+2022-02-21 14:48:59,292:INFO:Defining num_topics parameter
+2022-02-21 14:48:59,293:INFO:num_topics set to: 7
+2022-02-21 14:48:59,297:INFO:LDA multi_core enabled
+2022-02-21 14:48:59,298:INFO:LdaMulticore imported successfully
+2022-02-21 14:49:01,999:INFO:LdaMulticore trained successfully
+2022-02-21 14:49:02,003:INFO:LdaModel(num_terms=1190, num_topics=7, decay=0.5, chunksize=100)
+2022-02-21 14:49:02,005:INFO:create_model() succesfully completed......................................
+2022-02-21 14:49:02,012:INFO:Initializing assign_model()
+2022-02-21 14:49:02,013:INFO:assign_model(model=LdaModel(num_terms=1190, num_topics=7, decay=0.5, chunksize=100), verbose=False)
+2022-02-21 14:49:02,015:INFO:Determining model type
+2022-02-21 14:49:02,017:INFO:model type: lda
+2022-02-21 14:49:02,019:INFO:Checking exceptions
+2022-02-21 14:49:02,022:INFO:Preloading libraries
+2022-02-21 14:49:02,024:INFO:Preparing display monitor
+2022-02-21 14:49:02,286:INFO:(100, 26)
+2022-02-21 14:49:02,295:INFO:assign_model() succesfully completed......................................
+2022-02-21 14:49:49,746:INFO:PyCaret NLP Module
+2022-02-21 14:49:49,748:INFO:version 2.3.6
+2022-02-21 14:49:49,749:INFO:Initializing setup()
+2022-02-21 14:49:49,750:INFO:USI: 467f
+2022-02-21 14:49:49,751:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2480, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=True)
+2022-02-21 14:49:49,753:INFO:Checking environment
+2022-02-21 14:49:49,754:INFO:python_version: 3.8.12
+2022-02-21 14:49:49,755:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-21 14:49:49,756:INFO:machine: x86_64
+2022-02-21 14:49:49,756:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-21 14:49:49,758:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-21 14:49:49,759:INFO:Checking libraries
+2022-02-21 14:49:49,760:INFO:pd==1.3.4
+2022-02-21 14:49:49,761:INFO:numpy==1.19.5
+2022-02-21 14:49:49,762:INFO:gensim==3.8.3
+2022-02-21 14:49:49,763:INFO:spacy==2.3.7
+2022-02-21 14:49:49,763:INFO:nltk==3.6.5
+2022-02-21 14:49:49,765:INFO:textblob==0.17.1
+2022-02-21 14:49:49,765:INFO:pyLDAvis==3.2.2
+2022-02-21 14:49:49,769:INFO:wordcloud==1.8.1
+2022-02-21 14:49:49,771:INFO:mlflow==1.23.1
+2022-02-21 14:49:49,772:INFO:Checking Exceptions
+2022-02-21 14:49:50,783:INFO:Preloading libraries
+2022-02-21 14:49:50,786:INFO:Preparing display monitor
+2022-02-21 14:49:50,818:INFO:Importing libraries
+2022-02-21 14:49:50,825:INFO:Declaring global variables
+2022-02-21 14:49:50,831:INFO:Input provided : dataframe
+2022-02-21 14:49:50,845:INFO:session_id set to : 2480
+2022-02-21 14:49:50,846:INFO:Copying training dataset
+2022-02-21 14:49:50,849:INFO:Importing stopwords from nltk
+2022-02-21 14:49:50,854:INFO:No custom stopwords defined
+2022-02-21 14:49:50,857:INFO:Removing numeric characters from the text
+2022-02-21 14:49:50,883:INFO:Removing special characters from the text
+2022-02-21 14:49:50,947:INFO:Tokenizing Words
+2022-02-21 14:49:51,030:INFO:Removing stopwords
+2022-02-21 14:49:51,144:INFO:Extracting Bigrams
+2022-02-21 14:49:51,408:INFO:Extracting Trigrams
+2022-02-21 14:49:51,801:INFO:Lemmatizing tokens
+2022-02-21 14:49:54,511:INFO:Removing stopwords after lemmatizing
+2022-02-21 14:49:54,561:INFO:Creating corpus and dictionary
+2022-02-21 14:49:54,593:INFO:Compiling processed text
+2022-02-21 14:49:54,595:INFO:Compiling information grid
+2022-02-21 14:49:54,620:INFO:setup() succesfully completed......................................
+2022-02-21 14:49:54,650:INFO:Initializing create_model()
+2022-02-21 14:49:54,651:INFO:create_model(model=lda, multi_core=True, num_topics=7, verbose=False, system=True)
+2022-02-21 14:49:54,652:INFO:Checking exceptions
+2022-02-21 14:49:54,653:INFO:Preloading libraries
+2022-02-21 14:49:54,655:INFO:Preparing display monitor
+2022-02-21 14:49:54,670:INFO:Defining topic model
+2022-02-21 14:49:54,677:INFO:Model: Latent Dirichlet Allocation
+2022-02-21 14:49:54,679:INFO:Defining num_topics parameter
+2022-02-21 14:49:54,681:INFO:num_topics set to: 7
+2022-02-21 14:49:54,684:INFO:LDA multi_core enabled
+2022-02-21 14:49:54,687:INFO:LdaMulticore imported successfully
+2022-02-21 14:49:56,935:INFO:LdaMulticore trained successfully
+2022-02-21 14:49:56,941:INFO:LdaModel(num_terms=1190, num_topics=7, decay=0.5, chunksize=100)
+2022-02-21 14:49:56,946:INFO:create_model() succesfully completed......................................
+2022-02-21 14:49:56,955:INFO:Initializing assign_model()
+2022-02-21 14:49:56,961:INFO:assign_model(model=LdaModel(num_terms=1190, num_topics=7, decay=0.5, chunksize=100), verbose=False)
+2022-02-21 14:49:56,963:INFO:Determining model type
+2022-02-21 14:49:56,965:INFO:model type: lda
+2022-02-21 14:49:56,966:INFO:Checking exceptions
+2022-02-21 14:49:56,968:INFO:Preloading libraries
+2022-02-21 14:49:56,970:INFO:Preparing display monitor
+2022-02-21 14:49:57,224:INFO:(100, 26)
+2022-02-21 14:49:57,225:INFO:assign_model() succesfully completed......................................
+2022-02-21 14:51:21,329:INFO:PyCaret NLP Module
+2022-02-21 14:51:21,332:INFO:version 2.3.6
+2022-02-21 14:51:21,333:INFO:Initializing setup()
+2022-02-21 14:51:21,335:INFO:USI: 8a13
+2022-02-21 14:51:21,336:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2480, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=True)
+2022-02-21 14:51:21,341:INFO:Checking environment
+2022-02-21 14:51:21,342:INFO:python_version: 3.8.12
+2022-02-21 14:51:21,345:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-21 14:51:21,361:INFO:machine: x86_64
+2022-02-21 14:51:21,362:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-21 14:51:21,366:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-21 14:51:21,367:INFO:Checking libraries
+2022-02-21 14:51:21,368:INFO:pd==1.3.4
+2022-02-21 14:51:21,370:INFO:numpy==1.19.5
+2022-02-21 14:51:21,372:INFO:gensim==3.8.3
+2022-02-21 14:51:21,373:INFO:spacy==2.3.7
+2022-02-21 14:51:21,376:INFO:nltk==3.6.5
+2022-02-21 14:51:21,379:INFO:textblob==0.17.1
+2022-02-21 14:51:21,381:INFO:pyLDAvis==3.2.2
+2022-02-21 14:51:21,382:INFO:wordcloud==1.8.1
+2022-02-21 14:51:21,384:INFO:mlflow==1.23.1
+2022-02-21 14:51:21,385:INFO:Checking Exceptions
+2022-02-21 14:51:22,932:INFO:Preloading libraries
+2022-02-21 14:51:22,935:INFO:Preparing display monitor
+2022-02-21 14:51:23,012:INFO:Importing libraries
+2022-02-21 14:51:23,014:INFO:Declaring global variables
+2022-02-21 14:51:23,016:INFO:Input provided : dataframe
+2022-02-21 14:51:23,017:INFO:session_id set to : 2480
+2022-02-21 14:51:23,019:INFO:Copying training dataset
+2022-02-21 14:51:23,025:INFO:Importing stopwords from nltk
+2022-02-21 14:51:23,030:INFO:No custom stopwords defined
+2022-02-21 14:51:23,035:INFO:Removing numeric characters from the text
+2022-02-21 14:51:23,054:INFO:Removing special characters from the text
+2022-02-21 14:51:23,123:INFO:Tokenizing Words
+2022-02-21 14:51:23,273:INFO:Removing stopwords
+2022-02-21 14:51:23,405:INFO:Extracting Bigrams
+2022-02-21 14:51:23,844:INFO:Extracting Trigrams
+2022-02-21 14:51:24,321:INFO:Lemmatizing tokens
+2022-02-21 14:51:27,722:INFO:Removing stopwords after lemmatizing
+2022-02-21 14:51:27,781:INFO:Creating corpus and dictionary
+2022-02-21 14:51:27,821:INFO:Compiling processed text
+2022-02-21 14:51:27,830:INFO:Compiling information grid
+2022-02-21 14:51:27,867:INFO:setup() succesfully completed......................................
+2022-02-21 14:51:27,896:INFO:Initializing create_model()
+2022-02-21 14:51:27,901:INFO:create_model(model=lda, multi_core=True, num_topics=7, verbose=False, system=True)
+2022-02-21 14:51:27,903:INFO:Checking exceptions
+2022-02-21 14:51:27,904:INFO:Preloading libraries
+2022-02-21 14:51:27,906:INFO:Preparing display monitor
+2022-02-21 14:51:27,921:INFO:Defining topic model
+2022-02-21 14:51:27,924:INFO:Model: Latent Dirichlet Allocation
+2022-02-21 14:51:27,925:INFO:Defining num_topics parameter
+2022-02-21 14:51:27,927:INFO:num_topics set to: 7
+2022-02-21 14:51:27,933:INFO:LDA multi_core enabled
+2022-02-21 14:51:27,936:INFO:LdaMulticore imported successfully
+2022-02-21 14:51:30,573:INFO:LdaMulticore trained successfully
+2022-02-21 14:51:30,577:INFO:LdaModel(num_terms=1190, num_topics=7, decay=0.5, chunksize=100)
+2022-02-21 14:51:30,581:INFO:create_model() succesfully completed......................................
+2022-02-21 14:51:30,589:INFO:Initializing assign_model()
+2022-02-21 14:51:30,591:INFO:assign_model(model=LdaModel(num_terms=1190, num_topics=7, decay=0.5, chunksize=100), verbose=False)
+2022-02-21 14:51:30,592:INFO:Determining model type
+2022-02-21 14:51:30,593:INFO:model type: lda
+2022-02-21 14:51:30,594:INFO:Checking exceptions
+2022-02-21 14:51:30,596:INFO:Preloading libraries
+2022-02-21 14:51:30,598:INFO:Preparing display monitor
+2022-02-21 14:51:30,822:INFO:(100, 26)
+2022-02-21 14:51:30,829:INFO:assign_model() succesfully completed......................................
+2022-02-21 14:53:24,956:INFO:PyCaret NLP Module
+2022-02-21 14:53:24,958:INFO:version 2.3.6
+2022-02-21 14:53:24,959:INFO:Initializing setup()
+2022-02-21 14:53:24,961:INFO:USI: 1639
+2022-02-21 14:53:24,962:INFO:setup(data=(1000, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2000, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=False)
+2022-02-21 14:53:24,963:INFO:Checking environment
+2022-02-21 14:53:24,965:INFO:python_version: 3.8.12
+2022-02-21 14:53:24,965:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-21 14:53:24,968:INFO:machine: x86_64
+2022-02-21 14:53:24,969:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-21 14:53:24,970:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-21 14:53:24,974:INFO:Checking libraries
+2022-02-21 14:53:24,977:INFO:pd==1.3.4
+2022-02-21 14:53:24,980:INFO:numpy==1.19.5
+2022-02-21 14:53:24,982:INFO:gensim==3.8.3
+2022-02-21 14:53:25,371:INFO:spacy==2.3.7
+2022-02-21 14:53:25,891:INFO:nltk==3.6.5
+2022-02-21 14:53:25,934:INFO:textblob==0.17.1
+2022-02-21 14:53:26,012:INFO:pyLDAvis==3.2.2
+2022-02-21 14:53:26,014:INFO:wordcloud==1.8.1
+2022-02-21 14:53:26,526:INFO:mlflow==1.23.1
+2022-02-21 14:53:26,529:INFO:Checking Exceptions
+2022-02-21 14:53:27,974:INFO:Preloading libraries
+2022-02-21 14:53:27,975:INFO:Preparing display monitor
+2022-02-21 14:53:27,991:INFO:Importing libraries
+2022-02-21 14:53:27,992:INFO:Declaring global variables
+2022-02-21 14:53:27,993:INFO:Input provided : dataframe
+2022-02-21 14:53:27,995:INFO:session_id set to : 2000
+2022-02-21 14:53:28,002:INFO:Copying training dataset
+2022-02-21 14:53:28,017:INFO:Importing stopwords from nltk
+2022-02-21 14:53:28,141:INFO:No custom stopwords defined
+2022-02-21 14:53:28,143:INFO:Removing numeric characters from the text
+2022-02-21 14:53:28,196:INFO:Removing special characters from the text
+2022-02-21 14:53:28,562:INFO:Tokenizing Words
+2022-02-21 14:53:29,137:INFO:Removing stopwords
+2022-02-21 14:53:29,648:INFO:Extracting Bigrams
+2022-02-21 14:53:31,058:INFO:Extracting Trigrams
+2022-02-21 14:53:33,253:INFO:Lemmatizing tokens
+2022-02-21 14:53:43,117:INFO:Removing stopwords after lemmatizing
+2022-02-21 14:53:43,440:INFO:Creating corpus and dictionary
+2022-02-21 14:53:43,626:INFO:Compiling processed text
+2022-02-21 14:53:43,632:INFO:Compiling information grid
+2022-02-21 14:53:43,707:INFO:setup() succesfully completed......................................
+2022-02-21 14:53:43,710:INFO:Initializing create_model()
+2022-02-21 14:53:43,711:INFO:create_model(model=lda, multi_core=True, num_topics=6, verbose=False, system=True)
+2022-02-21 14:53:43,713:INFO:Checking exceptions
+2022-02-21 14:53:43,714:INFO:Preloading libraries
+2022-02-21 14:53:43,717:INFO:Preparing display monitor
+2022-02-21 14:53:43,731:INFO:Defining topic model
+2022-02-21 14:53:43,734:INFO:Model: Latent Dirichlet Allocation
+2022-02-21 14:53:43,735:INFO:Defining num_topics parameter
+2022-02-21 14:53:43,738:INFO:num_topics set to: 6
+2022-02-21 14:53:43,741:INFO:LDA multi_core enabled
+2022-02-21 14:53:43,743:INFO:LdaMulticore imported successfully
+2022-02-21 14:53:51,438:INFO:LdaMulticore trained successfully
+2022-02-21 14:53:51,443:INFO:LdaModel(num_terms=3547, num_topics=6, decay=0.5, chunksize=100)
+2022-02-21 14:53:51,444:INFO:create_model() succesfully completed......................................
+2022-02-21 14:53:51,448:INFO:Initializing assign_model()
+2022-02-21 14:53:51,450:INFO:assign_model(model=LdaModel(num_terms=3547, num_topics=6, decay=0.5, chunksize=100), verbose=False)
+2022-02-21 14:53:51,451:INFO:Determining model type
+2022-02-21 14:53:51,453:INFO:model type: lda
+2022-02-21 14:53:51,455:INFO:Checking exceptions
+2022-02-21 14:53:51,456:INFO:Preloading libraries
+2022-02-21 14:53:51,458:INFO:Preparing display monitor
+2022-02-21 14:53:53,884:INFO:(1000, 25)
+2022-02-21 14:53:53,887:INFO:assign_model() succesfully completed......................................
+2022-02-21 14:53:56,852:INFO:PyCaret NLP Module
+2022-02-21 14:53:56,854:INFO:version 2.3.6
+2022-02-21 14:53:56,857:INFO:Initializing setup()
+2022-02-21 14:53:56,860:INFO:USI: daf3
+2022-02-21 14:53:56,864:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2480, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=True)
+2022-02-21 14:53:56,866:INFO:Checking environment
+2022-02-21 14:53:56,870:INFO:python_version: 3.8.12
+2022-02-21 14:53:56,871:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-21 14:53:56,873:INFO:machine: x86_64
+2022-02-21 14:53:56,875:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-21 14:53:56,877:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-21 14:53:56,880:INFO:Checking libraries
+2022-02-21 14:53:56,882:INFO:pd==1.3.4
+2022-02-21 14:53:56,884:INFO:numpy==1.19.5
+2022-02-21 14:53:56,885:INFO:gensim==3.8.3
+2022-02-21 14:53:56,887:INFO:spacy==2.3.7
+2022-02-21 14:53:56,889:INFO:nltk==3.6.5
+2022-02-21 14:53:56,891:INFO:textblob==0.17.1
+2022-02-21 14:53:56,892:INFO:pyLDAvis==3.2.2
+2022-02-21 14:53:56,893:INFO:wordcloud==1.8.1
+2022-02-21 14:53:56,896:INFO:mlflow==1.23.1
+2022-02-21 14:53:56,901:INFO:Checking Exceptions
+2022-02-21 14:53:58,180:INFO:Preloading libraries
+2022-02-21 14:53:58,182:INFO:Preparing display monitor
+2022-02-21 14:53:58,222:INFO:Importing libraries
+2022-02-21 14:53:58,225:INFO:Declaring global variables
+2022-02-21 14:53:58,227:INFO:Input provided : dataframe
+2022-02-21 14:53:58,229:INFO:session_id set to : 2480
+2022-02-21 14:53:58,232:INFO:Copying training dataset
+2022-02-21 14:53:58,236:INFO:Importing stopwords from nltk
+2022-02-21 14:53:58,240:INFO:No custom stopwords defined
+2022-02-21 14:53:58,244:INFO:Removing numeric characters from the text
+2022-02-21 14:53:58,260:INFO:Removing special characters from the text
+2022-02-21 14:53:58,312:INFO:Tokenizing Words
+2022-02-21 14:53:58,399:INFO:Removing stopwords
+2022-02-21 14:53:58,490:INFO:Extracting Bigrams
+2022-02-21 14:53:58,695:INFO:Extracting Trigrams
+2022-02-21 14:53:58,993:INFO:Lemmatizing tokens
+2022-02-21 14:54:01,432:INFO:Removing stopwords after lemmatizing
+2022-02-21 14:54:01,485:INFO:Creating corpus and dictionary
+2022-02-21 14:54:01,525:INFO:Compiling processed text
+2022-02-21 14:54:01,528:INFO:Compiling information grid
+2022-02-21 14:54:01,543:INFO:setup() succesfully completed......................................
+2022-02-21 14:54:01,576:INFO:Initializing create_model()
+2022-02-21 14:54:01,578:INFO:create_model(model=lda, multi_core=True, num_topics=7, verbose=False, system=True)
+2022-02-21 14:54:01,580:INFO:Checking exceptions
+2022-02-21 14:54:01,584:INFO:Preloading libraries
+2022-02-21 14:54:01,588:INFO:Preparing display monitor
+2022-02-21 14:54:01,609:INFO:Defining topic model
+2022-02-21 14:54:01,611:INFO:Model: Latent Dirichlet Allocation
+2022-02-21 14:54:01,613:INFO:Defining num_topics parameter
+2022-02-21 14:54:01,614:INFO:num_topics set to: 7
+2022-02-21 14:54:01,618:INFO:LDA multi_core enabled
+2022-02-21 14:54:01,619:INFO:LdaMulticore imported successfully
+2022-02-21 14:54:03,900:INFO:LdaMulticore trained successfully
+2022-02-21 14:54:03,905:INFO:LdaModel(num_terms=1190, num_topics=7, decay=0.5, chunksize=100)
+2022-02-21 14:54:03,907:INFO:create_model() succesfully completed......................................
+2022-02-21 14:54:03,919:INFO:Initializing assign_model()
+2022-02-21 14:54:03,920:INFO:assign_model(model=LdaModel(num_terms=1190, num_topics=7, decay=0.5, chunksize=100), verbose=False)
+2022-02-21 14:54:03,923:INFO:Determining model type
+2022-02-21 14:54:03,926:INFO:model type: lda
+2022-02-21 14:54:03,930:INFO:Checking exceptions
+2022-02-21 14:54:03,933:INFO:Preloading libraries
+2022-02-21 14:54:03,935:INFO:Preparing display monitor
+2022-02-21 14:54:04,144:INFO:(100, 26)
+2022-02-21 14:54:04,156:INFO:assign_model() succesfully completed......................................
+2022-02-21 14:54:50,468:INFO:PyCaret NLP Module
+2022-02-21 14:54:50,469:INFO:version 2.3.6
+2022-02-21 14:54:50,472:INFO:Initializing setup()
+2022-02-21 14:54:50,473:INFO:USI: 9c20
+2022-02-21 14:54:50,477:INFO:setup(data=(100, 17), target=review_content_clean, custom_stopwords=None, html=True, session_id=2480, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=True)
+2022-02-21 14:54:50,479:INFO:Checking environment
+2022-02-21 14:54:50,482:INFO:python_version: 3.8.12
+2022-02-21 14:54:50,483:INFO:python_build: ('default', 'Dec 21 2021 10:45:09')
+2022-02-21 14:54:50,489:INFO:machine: x86_64
+2022-02-21 14:54:50,490:INFO:platform: Linux-5.10.76-linuxkit-x86_64-with-glibc2.2.5
+2022-02-21 14:54:50,492:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2022-02-21 14:54:50,493:INFO:Checking libraries
+2022-02-21 14:54:50,495:INFO:pd==1.3.4
+2022-02-21 14:54:50,496:INFO:numpy==1.19.5
+2022-02-21 14:54:50,497:INFO:gensim==3.8.3
+2022-02-21 14:54:50,500:INFO:spacy==2.3.7
+2022-02-21 14:54:50,505:INFO:nltk==3.6.5
+2022-02-21 14:54:50,506:INFO:textblob==0.17.1
+2022-02-21 14:54:50,507:INFO:pyLDAvis==3.2.2
+2022-02-21 14:54:50,509:INFO:wordcloud==1.8.1
+2022-02-21 14:54:50,510:INFO:mlflow==1.23.1
+2022-02-21 14:54:50,512:INFO:Checking Exceptions
+2022-02-21 14:54:51,523:INFO:Preloading libraries
+2022-02-21 14:54:51,525:INFO:Preparing display monitor
+2022-02-21 14:54:51,604:INFO:Importing libraries
+2022-02-21 14:54:51,606:INFO:Declaring global variables
+2022-02-21 14:54:51,608:INFO:Input provided : dataframe
+2022-02-21 14:54:51,611:INFO:session_id set to : 2480
+2022-02-21 14:54:51,615:INFO:Copying training dataset
+2022-02-21 14:54:51,621:INFO:Importing stopwords from nltk
+2022-02-21 14:54:51,632:INFO:No custom stopwords defined
+2022-02-21 14:54:51,639:INFO:Removing numeric characters from the text
+2022-02-21 14:54:51,700:INFO:Removing special characters from the text
+2022-02-21 14:54:51,797:INFO:Tokenizing Words
+2022-02-21 14:54:51,889:INFO:Removing stopwords
+2022-02-21 14:54:51,994:INFO:Extracting Bigrams
+2022-02-21 14:54:52,270:INFO:Extracting Trigrams
+2022-02-21 14:54:52,719:INFO:Lemmatizing tokens
+2022-02-21 14:54:55,607:INFO:Removing stopwords after lemmatizing
+2022-02-21 14:54:55,650:INFO:Creating corpus and dictionary
+2022-02-21 14:54:55,689:INFO:Compiling processed text
+2022-02-21 14:54:55,694:INFO:Compiling information grid
+2022-02-21 14:54:55,707:INFO:setup() succesfully completed......................................
+2022-02-21 14:54:55,753:INFO:Initializing create_model()
+2022-02-21 14:54:55,754:INFO:create_model(model=lda, multi_core=True, num_topics=7, verbose=False, system=True)
+2022-02-21 14:54:55,757:INFO:Checking exceptions
+2022-02-21 14:54:55,758:INFO:Preloading libraries
+2022-02-21 14:54:55,759:INFO:Preparing display monitor
+2022-02-21 14:54:55,784:INFO:Defining topic model
+2022-02-21 14:54:55,785:INFO:Model: Latent Dirichlet Allocation
+2022-02-21 14:54:55,786:INFO:Defining num_topics parameter
+2022-02-21 14:54:55,788:INFO:num_topics set to: 7
+2022-02-21 14:54:55,793:INFO:LDA multi_core enabled
+2022-02-21 14:54:55,794:INFO:LdaMulticore imported successfully
+2022-02-21 14:54:58,174:INFO:LdaMulticore trained successfully
+2022-02-21 14:54:58,178:INFO:LdaModel(num_terms=1190, num_topics=7, decay=0.5, chunksize=100)
+2022-02-21 14:54:58,180:INFO:create_model() succesfully completed......................................
+2022-02-21 14:54:58,187:INFO:Initializing assign_model()
+2022-02-21 14:54:58,189:INFO:assign_model(model=LdaModel(num_terms=1190, num_topics=7, decay=0.5, chunksize=100), verbose=False)
+2022-02-21 14:54:58,191:INFO:Determining model type
+2022-02-21 14:54:58,193:INFO:model type: lda
+2022-02-21 14:54:58,194:INFO:Checking exceptions
+2022-02-21 14:54:58,196:INFO:Preloading libraries
+2022-02-21 14:54:58,198:INFO:Preparing display monitor
+2022-02-21 14:54:58,436:INFO:(100, 26)
+2022-02-21 14:54:58,445:INFO:assign_model() succesfully completed......................................
